@@ -17,6 +17,10 @@ li {
 	width: auto;
 }
 
+a.activeMenuItem {
+    background-color: #fed136;
+}
+
 li a {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
@@ -302,7 +306,6 @@ article {
 }
 
 .post-image-container {
-	/* width: 350px; */
 	width: 250px;
 	height: 200px;
 	display: -webkit-inline-box;
@@ -541,7 +544,6 @@ aside div.aside-iframe-container iframe {
 .co-card {
 	margin-left: -17%;
 }
-
 /* .contact.us */
 
 .contact-us-wrapper {
@@ -550,6 +552,7 @@ aside div.aside-iframe-container iframe {
 	background-color: rgb(10, 105, 143);
 }
 
+/* Anyar */
 .contact-us-container1 {
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
@@ -585,26 +588,17 @@ aside div.aside-iframe-container iframe {
 }
 
 .contact-us-container1 form div div {
-	width: 50%;
-	margin: auto;
+	width: 100%;
 	float: right;
 }
 
-.contact-us-container1 form button {
-	padding-left: 5%;
-	padding-right: 5%;
-	margin: auto;
-	line-height: 2;
-	margin-top: 2.5%;
-	text-align: center;
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
+.contact-us-container1 form input[type=submit] {
 	background-color: #1295C9;
-	border: 0px;
+	border: 0;
 	color: white;
-	-webkit-box-shadow: 1px 1px 1.5px whitesmoke;
-	box-shadow: 1px 1px 1.5px whitesmoke;
+	border-radius: 10px;
+	width: 20%;
+	height: 7.5%;
 }
 
 .contact-us-container1 form button:hover {
@@ -613,16 +607,22 @@ aside div.aside-iframe-container iframe {
 
 .contact-us-container1 form label {
 	color: white;
+	line-height: 20px;
+	margin-top: 3.5%;
 }
 
-.contact-us-container1 form input {
+.contact-us-container1 form div div input {
 	color: rgb(7, 73, 99);
+	margin: auto;
+	width: 100%;
 }
 
 .contact-us-container1 form textarea {
+	resize: none;
 	color: rgb(7, 73, 99);
 	padding: .5%;
 }
+/* Tekan kene */
 
 /* .footer.  */
 
@@ -777,13 +777,6 @@ article.post-wrapper p.post-message {
 }
 
 /* about us */
-.pesan {
-	width: 100%;
-}
-
-.pesan-textarea {
-	width: 100%;
-}
 
 /* chemengfair */
 

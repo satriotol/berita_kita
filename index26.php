@@ -19,12 +19,17 @@ $video = query("SELECT * FROM video");
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-$('body').onload = function() {
-    window.scrollBy(0,340);
-    $(document).scrollBy(0,340);
-}
-</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/HIMPRO-logo.png">
+    <title>HIMPRO TEKNIK KIMIA UNNES</title>
+</head>
+
 <body id="page-top">
     <!-- Header -->
     <header>
@@ -154,7 +159,7 @@ $('body').onload = function() {
                     <?php endif; ?>
                 </div>
             </section>
-        <aside>
+            <aside>
                 <div class="aside-iframe-container">
                     <h2 class="video-hmptk">Video HMPTK</h2>
                     <br>
@@ -199,14 +204,15 @@ $('body').onload = function() {
             <form id="contact" action="" method="post" enctype="multipart/form-data">
                 <div>
                     <div>
-                        <input class="pesan" type="text" name="nama_pengirim" id="nama_pengirim"  placeholder="Nama" required>
+                        <input placeholder="Nama"type="text" name="nama_pengirim" id="nama_pengirim" required placeholder="Nama">
                     </div>
                     <div style="float: right">
-                        <input class="pesan" type="text" name="email_pengirim" id="email_pengirim"  placeholder="E-mail" required>
-                    </div> 
+                        <input placeholder="Email" type="text" name="email_pengirim" id="email_pengirim" required>
+                    </div>
                 </div>
+                    <label for="">Pesan : </label>
                 <br>
-                    <textarea class="pesan-textarea" name="isi_pesan" id="isi_pesan" cols="60" rows="10" placeholder="Pesan" required></textarea>
+                    <textarea name="isi_pesan" id="isi_pesan" cols="60" rows="10" required></textarea>
                 <br>
                     <input type="hidden" name="tanggal_pengirim" required
                     value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>

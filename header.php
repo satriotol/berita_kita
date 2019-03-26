@@ -16,10 +16,9 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/baru.css" rel="stylesheet">
 	<!-- Javascript for custom animation -->
-	<script src="js/animate.js"></script>
-	<script src=""></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/animate.js"></script>
 </head>
 
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #1295C9; background-blend-mode: color; border: none">
@@ -41,24 +40,24 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a style="color: white" href="index26.php">Home</a>
+							<a class="nav-link" style="color: white" href="index26.php">Home</a>
 						</li>
 						<li>
-							<a style="color: white" href="article.php">Article</a>
+							<a class="nav-link" style="color: white" href="article.php">Article</a>
 						</li>
 						<li>
-							<a style="color: white" href="menu_chemengfair.php">Chemengfair</a>
+							<a class="nav-link" style="color: white" href="menu_chemengfair.php">Chemengfair</a>
 						</li>
 						<li>
-							<a style="color: white" href="isi_data_alumni.php" target="_blank">Alumni</a>
+							<a class="nav-link" style="color: white" href="isi_data_alumni.php" target="_blank">Alumni</a>
 						</li>
 						<li class="dropdown">
-							<a style="color: white" href="aboutus.php">About</a>
+							<a class="nav-link" style="color: white" href="aboutus.php">About</a>
 							<div class="dropdown-content" style="background-color: #1295C9">
-								<a style="color: white" href="aboutus.php">Kabinet</a>
-								<a style="color: white" href="menu_departemen.php">Departemen</a>
-								<a style="color: white" href="http://tekkim.unnes.ac.id"  target="_blank">Jurusan</a>
-								<a style="color: white" href="index26.php#contact-us">Kontak</a>
+								<a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
+								<a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
+								<a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id"  target="_blank">Jurusan</a>
+								<a class="nav-link" style="color: white" href="index26.php#contact-us">Kontak</a>
 							</div>
 						</li>
 					</ul>
@@ -68,3 +67,14 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+
+<script>
+	$(".nav-link").each(function() {
+		if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+			$(this).addClass('activeMenuItem');
+		}
+	});
+	$(document).ready(function() {
+	
+	});
+</script>
