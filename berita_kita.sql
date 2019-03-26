@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 25, 2019 at 09:05 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.0
+-- Host: localhost
+-- Generation Time: Mar 26, 2019 at 03:24 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -94,7 +94,8 @@ INSERT INTO `berita` (`id`, `judul`, `isi`, `kategori`, `gambar`, `tanggal_berit
 (44, 'Ronaldo', '<p>Cristiano Ronaldo dos Santos Aveiro, OIH (Portugis: [kÉ¾iÊƒËˆtjÉnu ÊoËˆnaÉ«du] lahir di Funchal, Madeira, Portugal, 5 Februari 1985; umur 34 tahun) atau lebih dikenal Cristiano Ronaldo merupakan seorang pemain sepak bola Portugal. Ia dapat berposisi sebagai sayap kiri atau kanan serta penyerang tengah. Saat ini ia bermain untuk tim Italia, Juventus dan untuk tim nasional Portugal. Sebelum bermain untuk Real Madrid, ia pernah bermain di Sporting Lisboa dan Manchester United. Pemain yang kerap bernomor punggung 7 di lapangan hijau ini juga akrab dengan sebutan CR7, gabungan dari inisial nama dan nomor punggungnya.<br /><br />Dia memakai nomor punggung 7 di United, yang sebelumnya dikenakan oleh Johnny Berry, George Best, Steve Coppell, Bryan Robson, Eric Cantona dan David Beckham. Setelah menghabiskan tahun pertamanya di Madrid mengenakan nomor punggung 9, ia mulai mengenakan nomor 7 lagi menyusul kepergian pemain legendaris Raul Gonzalez.<br /><br />Segudang prestasi telah berhasil dia raih. Cristiano Ronaldo berhasil meraih gelar FIFA Ballon D&rsquo;Or di bulan Januari 2015 lalu yang diadakan di markas FIFA Zurich, Swiss. Gelar FIFA Ballon D&rsquo;Or ini merupakan penghargaan ketiga bagi Ronaldo, setelah sebelumnya pada tahun 2013 lalu dan 2008 ketika masih berseragam Manchester United.[2]&nbsp;</p>', '14', '5c8f00b6e59a0.jpeg', '2019-03-18'),
 (45, 'Unnes', 'Konvensi Nasional Pendidikan Indonesia (Konaspi) merupakan wahana akademik kaum pendidik Indonesia untuk memberikan sumbangan pemikiran bagi pembangunan manusia seutuhnya melalui pendidikan. Konaspi IX yang dilaksanakan di Universitas Negeri Padang pada 13-16 Maret  2019 berhasil merumuskan rekomendasi yang disebut sebagai  Deklarasi Padang. Deklarasi Padang dibacakan di Auditorium Universitas Negeri Padang, Jumat malam, 15/3. Rektor UNNES Prof [â€¦]<br>\r\n', '8', '5c8f4337c1ff7.jpeg', '2019-03-18'),
 (46, 'CESA FUTSAL CUP 2015', 'SEMARANG - Himpunan Mahasiswa Profesi Teknik Kimia (HMPTK) UNNES mempersembahkan Turnamen CESA FUTSAL CUP, sebagai salah satu event tahunan program kerja HMPTK UNNES. Chemical Engineering Student Assosiation (CESA) FUTSAL CUP 2015 Season II, mulai membuka pendaftaran pada tanggal 1 September dan dipastikan kick off pada 28 November mendatang.<br>\r\nTurnamen CESA FUTSAL CUP 2015 akan diadakan pada 28-29 November di Tunjang Futsal Studium, Jalan Soekarno Hatta No. 188A Semarang (Depan Kampus Biru AMNI). Total hadiah sejumlah 7 juta rupiah yakni berupa uang pembinaan dan trophy, top scorer dan best player. Turnamen ini akan memperebutkan trophy Kementerian Pemuda dan Olahraga Republik Indonesia. Turnamen ini dibuka untuk umum (dibuktikan dengan KTP). Technical Meeting akan diadakan pada tanggal 21 November 2015 di Tunjang Futsal Studium.<br>\r\nSistem pertandingan sendiri menggunakan sistem gugur dengan waktu pertandingan 2 x 10 menit hingga perempat final, sementara pada semifinal dan final menggunakan waktu pertndingan 2 x 15 menit. Ketentuan lainnya akan dijelaskan melalui peraturan pertandingan.<br>\r\nSyarat untuk mengikuti turnamen ini yaitu :<br>\r\na. Pemain adalah Masyarakat umum yang dibuktikan dengan KTP yang masih berlaku.<br>\r\nb. 1 tim terdiri dari 12 orang (10 pemain, 1 official, 1 manager).<br>\r\nc. 1 orang pemain hanya boleh mewakili 1 tim.<br>\r\nUntuk informasi lebih lanjut dan bagi tim yang ingin mendaftar dapat menghubungi Febry pada nomor 085695505317 (588BFF3B) atau Dwi Waluyo pada nomor 085641650331 (74594A7C). Pendaftaran dikenakan biaya sebesar Rp. 300.000/tim.', '12', '5c973d624dff6.jpg', '2019-03-24'),
-(49, 'PRESS RELEASE Mahasiswa Teknik Kimia UNNES Laksanakan International Research Collaboration', '<p>Semarang (02/01/2019). Selamat dan sukses kepada Mahasiswa Teknik Kimia, Universitas Negeri Semarang yang telah melaksanakan International Research Collaboration. Wakil Dekan Bidang Kemahasiswaan Fakultas Teknik Universitas Negeri Semarang melepas dua Mahasiswa Teknik Kimia yang akan melaksanakan penelitian dan pengambilan data sebagai bentuk implementasi dari International Research Collaboration di Universiti Teknologi Malaysia, Johor Bahru. Yang merupakan bimbingan dari Dr. Ratna Dewi Kusumaningtyas, S. T., M. T.. Mahasiswa Teknik Kimia yang mengikuti kegiatan tersebut adalah:</p><p>&nbsp;</p><p>Dwi Nuryana (Teknik Kimia, 2015)&nbsp;</p><p>&nbsp;</p><p>Muhammad Fahrul Rahman Alim (Teknik Kimia, 2015)</p><p>&nbsp;</p><p>Kegiatan tersebut dilaksanakan pada tanggal 5 januari - 1 Februari 2019. Awalnya penelitian tersebut dilaksanakan dilaboratorium Teknik Kimia UNNES yang selanjutnya akan dilakukan penyempurnaan di Universiti Teknologi Malaysia. kelanjutan dari penelitian tersebut yaitu pengajuan proposal dengan judul &ldquo;Microwave Assisted Pyrolysis (MAP) Limbah Biomassa untuk Pembuatan Green Fuel Bio-Hidrogen dan Adsorben Peyimpan Bahan Bakar Gas&rdquo;.&nbsp;</p><p>&nbsp;</p><p>Keberhasilan kegiatan ini diraih berkat bantuan keluarga, kerabat, teman, dan seluruh dosen yang selalu mendukung dan mendoakan yang terbaik untuk kelancaran dan kesuksesan anak didiknya.&nbsp; Semoga keberhasilan&nbsp; Dwi Nuryana dan Muhammad Fahrul Rahman Alim dapat menjadi inspirasi dan motivasi bagi mahasiswa lain untuk terus berkarya dan berprestasi.&nbsp;</p><p>Salam Yes We Can !!!</p>', '8', '5c97abdfb5eb4.jpg', '2019-03-24');
+(49, 'PRESS RELEASE Mahasiswa Teknik Kimia UNNES Laksanakan International Research Collaboration', '<p>Semarang (02/01/2019). Selamat dan sukses kepada Mahasiswa Teknik Kimia, Universitas Negeri Semarang yang telah melaksanakan International Research Collaboration. Wakil Dekan Bidang Kemahasiswaan Fakultas Teknik Universitas Negeri Semarang melepas dua Mahasiswa Teknik Kimia yang akan melaksanakan penelitian dan pengambilan data sebagai bentuk implementasi dari International Research Collaboration di Universiti Teknologi Malaysia, Johor Bahru. Yang merupakan bimbingan dari Dr. Ratna Dewi Kusumaningtyas, S. T., M. T.. Mahasiswa Teknik Kimia yang mengikuti kegiatan tersebut adalah:</p><p>&nbsp;</p><p>Dwi Nuryana (Teknik Kimia, 2015)&nbsp;</p><p>&nbsp;</p><p>Muhammad Fahrul Rahman Alim (Teknik Kimia, 2015)</p><p>&nbsp;</p><p>Kegiatan tersebut dilaksanakan pada tanggal 5 januari - 1 Februari 2019. Awalnya penelitian tersebut dilaksanakan dilaboratorium Teknik Kimia UNNES yang selanjutnya akan dilakukan penyempurnaan di Universiti Teknologi Malaysia. kelanjutan dari penelitian tersebut yaitu pengajuan proposal dengan judul &ldquo;Microwave Assisted Pyrolysis (MAP) Limbah Biomassa untuk Pembuatan Green Fuel Bio-Hidrogen dan Adsorben Peyimpan Bahan Bakar Gas&rdquo;.&nbsp;</p><p>&nbsp;</p><p>Keberhasilan kegiatan ini diraih berkat bantuan keluarga, kerabat, teman, dan seluruh dosen yang selalu mendukung dan mendoakan yang terbaik untuk kelancaran dan kesuksesan anak didiknya.&nbsp; Semoga keberhasilan&nbsp; Dwi Nuryana dan Muhammad Fahrul Rahman Alim dapat menjadi inspirasi dan motivasi bagi mahasiswa lain untuk terus berkarya dan berprestasi.&nbsp;</p><p>Salam Yes We Can !!!</p>', '8', '5c97abdfb5eb4.jpg', '2019-03-24'),
+(51, 'PRESS RELEASE MTMTK 2018', '<p>Himpunan Mahasiswa Profesi Teknik Kimia telah melaksanakan Musyawarah Tinggi Mahasiswa Teknik Kimia (MTMTK) 2018 pada tanggal 22 Desember 2018 yang bertempat di Graha Cendekia E2 Fakultas Teknik Universitas Negeri Semarang. Musyawarah Tinggi Mahasiswa Teknik Kimia merupakan forum musyawarah tertinggi mahasiswa teknik kimia. Secara garis besar, MTMTK bertujuan untuk membahas dan mengubah konstitusi yang dirasa perlu untuk dirubah dan mengevaluasi kinerja mepengurusan HMPTK 2018 sekaligus pendemisioneran kepengurusan HMPTK 2018.<br />Acara MTMTK 2018 ini dihadiri oleh Koordinator DPH HMPTK 2018, pembina HMPTK 2018. Dalam sambutannya, Ibu Dewi Artanti Putri S.T., M.T menyampaikan pesan pesannya untuk pengurus baru agar lebih ditingkatkan lagi kinerjanya guna menuju tahun akreditasi Teknik Kimia di tahun 2019.<br /><br />MTMTK 2018 pada kali ini dipimpin oleh Dewan presidium tetap, yang terdiri dari 3 presidium. Presidium I diisi oleh Muhammad Iqbal, Presidium II oleh Miftahuddin Azhari, Presidium III Oleh Nauroh Nadzifah . Forum MTMTK kali ini berjalan sangat dinamis, banyak dari peserta forum yang mengusulkan gagasan-gagasan yang mereka tawarkan.<br />Rangkaian acara MTMTK diawali dengan Pembahasan AD ART dan GBHK Organisasi HMPTK. Dimana sidang pembahasan terbagi menjadi 3 komisi, komisi 1 membahas Anggaran dasar HMPTK, komisi 2 membahas Anggaran Rumah Tangga HMPTK, komisi 3 membahas Garis Besar Haluan Kegiatan HMPTK.<br /><br />Rangkaian acara selanjutnya yaitu penyampaian laporan Pertanggungjawaban HMPTK 2018 yang disampaikan oleh masing masing ketua Departemen HMPTK 2018.<br />Rangkaian acara terakhir MTMTK diisi dengan pendemisioneran HMPTK 2018, pemilihan DPH HMPTK 2019 dan penyerahan Jabatan Ketua HMPTK 2019 secara simbolis oleh Ketua HMPTK 2018 Naufal Mudrik Mezakki ke Ketua HMPTK 2019 terpilih Abdurrahman kholish Faizi.</p>', '', '5c99c77eb629c.jpeg', '2019-03-26');
 
 -- --------------------------------------------------------
 
@@ -191,7 +192,8 @@ INSERT INTO `pesan_pengirim` (`id_pesan`, `nama_pengirim`, `email_pengirim`, `is
 (30, '21', '21', '21', '2019/03/21.11:33:12pm'),
 (31, '23', '23', '23', '2019/03/21.11:33:47pm'),
 (32, '11', '11', 'aaaa', '2019/03/24.08:47:03am'),
-(33, 'Aziz', 'aziz@gmail.com', 'Webnya sangat bagus', '2019/03/25.12:10:54pm');
+(33, 'Aziz', 'aziz@gmail.com', 'Webnya sangat bagus', '2019/03/25.12:10:54pm'),
+(34, 'SAtrio', 'satriotol69@gmail.com', 'webnya bagus bangsat\r\n', '2019/03/26.01:07:37pm');
 
 -- --------------------------------------------------------
 
@@ -344,7 +346,7 @@ ALTER TABLE `alumni`
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `chemengfair`
@@ -368,7 +370,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `pesan_pengirim`
 --
 ALTER TABLE `pesan_pengirim`
-  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `slide`
