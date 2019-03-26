@@ -1,7 +1,7 @@
 <?php
-    require 'admin/function.php';
-    include 'header.php';
-    $index = query('SELECT * FROM departemen WHERE id_dept>0');
+require 'admin/function.php';
+include 'header.php';
+$index = query('SELECT * FROM departemen WHERE id_dept>0');
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/HIMPRO-logo.png">
+    <title>HIMPRO TEKNIK KIMIA UNNES</title>
     <title>HIMPRO TEKNIK KIMIA UNNES</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -31,6 +32,7 @@
     <script src=""></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 </head>
 
 <body>
@@ -38,20 +40,24 @@
         <div class="row">
             <?php
             foreach ($index as $departemen) {
-            ?>
-                <div class="col-md-3 text-center">
+                ?>
+            <div class="col-md-3 text-center">
+                <a href="departemen.php?id=<?= $departemen["id_dept"] ?>" target="blank_">
                     <div class="mz-module">
-                        <div class="mz-module-about">
-                            <i class="fa fa-briefcase color1 ot-circle"></i>
-                            <h3> <?= $departemen["nama_dept"] ?> </h3>
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/<?=$departemen["id_dept"]?>.png">
+                                <h3> <?=$departemen["nama_dept"] ?> </h3>
+                            </div>
                         </div>
-                        <a href="departemen.php?id=<?= $departemen["id_dept"]?>" class="mz-module-button">selengkapnya</a>
                     </div>
-                </div>
-            <?php } ?>
+                </a>
             </div>
+            <?php 
+        } ?>
+        </div>
     </section>
 </body>
 <?php include 'footer.php'; ?>
 
-</html>
+</html> 

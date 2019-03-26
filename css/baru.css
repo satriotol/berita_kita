@@ -797,3 +797,29 @@ article.post-wrapper p.post-message {
 	display: -ms-flexbox;
 	display: flex;
 }
+
+/* menu departement */
+a:hover {
+	text-decoration: none;
+}
+
+.mz-module-about {
+	width: 100%;
+	background-size: 100%;
+	background-position: center center;
+}
+
+.mz-module-about:hover {
+	
+}
+
+.mz-module-about img {
+	width: 50%;
+	height: auto;
+	filter: grayscale(100);
+	transition: filter .25s;
+}
+
+.mz-module-about:hover img {
+	filter: grayscale(0);
+}
