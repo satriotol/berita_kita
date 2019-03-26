@@ -195,7 +195,7 @@ $video = query("SELECT * FROM video");
                         echo "
                         <script>
                             alert ('pesan berhasil ditambahkan!');
-                            document.location.href ='index26.php'
+                            document.location.href ='index.php'
                         </script>
                         ";
                     }

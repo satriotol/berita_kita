@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand page-scroll" href="index26.php"><img src="images/HIMPRO-logo.png" alt="Himprotekkim" height="60px"></a>
+					<a class="navbar-brand page-scroll" href="index.php"><img src="images/HIMPRO-logo.png" alt="Himprotekkim" height="60px"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,7 +40,7 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="nav-link" style="color: white" href="index26.php">Home</a>
+							<a class="nav-link" style="color: white" href="index.php">Home</a>
 						</li>
 						<li>
 							<a class="nav-link" style="color: white" href="article.php">Article</a>
@@ -57,7 +57,7 @@
 								<a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
 								<a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
 								<a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id"  target="_blank">Jurusan</a>
-								<a class="nav-link" style="color: white" href="index26.php#contact-us">Kontak</a>
+								<a class="nav-link" style="color: white" href="index.php#contact-us">Kontak</a>
 							</div>
 						</li>
 					</ul>

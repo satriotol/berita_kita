@@ -6,7 +6,7 @@
             echo "
             <script>
                 alert ('data berhasil ditambahkan!');
-                document.location.href ='index26.php'
+                document.location.href ='index.php'
             </script>
             ";
         }
@@ -14,7 +14,7 @@
             echo "
             <script>
                 alert ('data gagal ditambahkan!');
-                document.location.href ='index26.php'
+                document.location.href ='index.php'
             </script>
             ";
         }
