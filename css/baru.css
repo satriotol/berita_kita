@@ -816,10 +816,15 @@ a:hover {
 .mz-module-about img {
 	width: 50%;
 	height: auto;
-	filter: grayscale(100);
+	-webkit-filter: grayscale(100);
+	        filter: grayscale(100);
+	-webkit-transition: -webkit-filter .25s;
+	transition: -webkit-filter .25s;
 	transition: filter .25s;
+	transition: filter .25s, -webkit-filter .25s;
 }
 
 .mz-module-about:hover img {
-	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
 }
