@@ -16,25 +16,9 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
     <meta name="author" content="">
     <link rel="icon" href="images/HIMPRO-logo.png">
     <title>HIMPRO TEKNIK KIMIA UNNES</title>
-    <title>HIMPRO TEKNIK KIMIA UNNES</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/baru.css" rel="stylesheet">
-    <!-- Javascript for custom animation -->
-    <script src="js/animate.js"></script>
-    <script src=""></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
 </head>
 
+<!-- Pake HTML -->
 <body>
     <section id="about" class="light-bg">
         <div class="row">
@@ -137,6 +121,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
         </div>
     </section>
 </body>
+<!-- Pake HTML -->
 <?php include 'footer.php'; ?>
 
 </html> 
