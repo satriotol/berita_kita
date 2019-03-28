@@ -38,23 +38,102 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
 <body>
     <section id="about" class="light-bg">
         <div class="row">
-            <?php
-            foreach ($index as $departemen) {
-                ?>
             <div class="col-md-3 text-center">
-                <a href="departemen.php?id=<?= $departemen["id_dept"] ?>" target="blank_">
+                <a href="#" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
-                                <img src="images/departemen/<?=$departemen["id_dept"]?>.png">
-                                <h3> <?=$departemen["nama_dept"] ?> </h3>
+                                <img src="images/departemen/GA.png">
+                                <h3>GA</h3>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <?php 
-        } ?>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/HRD.png">
+                                <h3>HRD</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/PRC.png">
+                                <h3>PRC</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/SED.png">
+                                <h3>SED</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/RnT.png">
+                                <h3>RnT</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/STD.png">
+                                <h3>STD</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/SOCDEV.png">
+                                <h3>SOCDEV</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" target="blank_">
+                    <div class="mz-module">
+                        <div>
+                            <div class="mz-module-about">
+                                <img src="images/departemen/TECHNO.png">
+                                <h3>TECHNO</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 </body>
