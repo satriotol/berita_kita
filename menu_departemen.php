@@ -121,5 +121,6 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
     </section>
 </body>
 <?php include 'footer.php'; ?>
+<!-- jembut -->
 
 </html> 
