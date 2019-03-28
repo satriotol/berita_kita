@@ -18,6 +18,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
     <title>HIMPRO TEKNIK KIMIA UNNES</title>
 </head>
 
+<!-- Pake HTML -->
 <body>
     <section id="about" class="light-bg">
         <div class="row">
@@ -120,7 +121,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
         </div>
     </section>
 </body>
+<!-- Pake HTML -->
 <?php include 'footer.php'; ?>
-<!-- jembut -->
 
 </html> 
