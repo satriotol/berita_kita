@@ -210,9 +210,8 @@ $video = query("SELECT * FROM video");
                         <input placeholder="Email" type="text" name="email_pengirim" id="email_pengirim" required>
                     </div>
                 </div>
-                    <label for="">Pesan : </label>
                 <br>
-                    <textarea name="isi_pesan" id="isi_pesan" cols="60" rows="10" required></textarea>
+                    <textarea  placeholder="Pesan" name="isi_pesan" id="isi_pesan" cols="60" rows="10" required></textarea>
                 <br>
                     <input type="hidden" name="tanggal_pengirim" required
                     value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
