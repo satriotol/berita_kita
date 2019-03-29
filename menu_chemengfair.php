@@ -15,15 +15,6 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <title>CHEMENGFAIR</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css"  rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/baru.css">
-    <link href="css/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
 	<section id="about" class="light-bg">
