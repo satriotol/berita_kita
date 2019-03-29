@@ -178,10 +178,10 @@ function hapus_kategori($id){
 
         return mysqli_affected_rows($conn);
     }
-    function ubah_admin($data) {
-        global $conn;
-        $query = mysqli_query($conn, "SELECT user_admin FROM admin WHERE user_admin = '$user_admin'");
-    }
+    // function ubah_admin($data) {
+    //     global $conn;
+    //     $query = mysqli_query($conn, "SELECT user_admin FROM admin WHERE user_admin = '$user_admin'");
+    // }
     function hapus_admin($id){
         global $conn;
         mysqli_query($conn,"DELETE FROM `admin` WHERE `id_admin` = $id");
