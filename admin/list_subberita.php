@@ -3,7 +3,9 @@ include "layout/header.php";
 require 'function.php';
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 ?>
-<a href="tambah_subberita.php">Tambah subberita</a>
+<link rel="stylesheet" href="css/admin.css">
+<div class="table-semua">
+<a class="tambah-berita-link" href="tambah_subberita.php">Tambah subberita</a>
 <table border="1">
     <thead>
         <tr>
@@ -31,4 +33,5 @@ $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC
     <?php endforeach ?>
     </tbody>
 </table>
+</div>
 </div>

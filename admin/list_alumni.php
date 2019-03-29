@@ -5,6 +5,7 @@ require 'function.php';
 $alumni = query("SELECT * FROM alumni ORDER BY id_alumni DESC");
 
 ?>
+<link rel="stylesheet" href="css/admin.css">
 <div class="table-semua">
 <table border="1">
     <thead>
