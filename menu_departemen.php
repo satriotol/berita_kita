@@ -18,7 +18,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
     <title>HIMPRO TEKNIK KIMIA UNNES</title>
 </head>
 
-<!-- Pake HTML -->
+<!-- Pake HTML --> 
 <body>
     <section id="about" class="light-bg">
         <div class="row">
