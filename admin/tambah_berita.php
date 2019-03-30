@@ -37,23 +37,21 @@ $result1 = mysqli_query($conn,$query);
         <form action="" method="post" enctype="multipart/form-data">
             </ul>
             <label for="judul">Judul</label>
-                <input type="text" id="judul" name="judul" placeholder="Your judul..">
+                <input type="text" id="judul" name="judul" placeholder="Your judul.." required> 
             <label for="tanggal_berita">Tanggal</label><br>
                 <input type="date" id="tanggal_berita" name="tanggal_berita" placeholder="Your Tanggal.." 
-                style="border: 1px solid #ccc;width: 100%;padding: 12px 20px;margin: 8px 0;display: block;"> <br>
+                style="border: 1px solid #ccc;width: 100%;padding: 12px 20px;margin: 8px 0;display: block;" required> <br>
             <label for="kategori">Kategori</label>
-            <br><select id="kategori" name="kategori">
+            <br><select required id="kategori" name="kategori">
                             <option value="">Pilih Kategori</option>
                             <?php while($row1 = mysqli_fetch_array($result1)):;?>
                             <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
                             <?php endwhile;?>
                         </select>
             <label for="isi">Isi</label> <br>
-                <!-- <textarea placeholder="Masukkan Isi Berita" tabindex="5" id="isi" name="isi" 
-                required style="border: 1px solid #ccc;width: 100%;padding: 12px 20px;margin: 8px 0;display: block; height: 300px;"></textarea> <br> -->
                 <textarea class="ckeditor" id="isi" name="isi" required></textarea>
             <label for="gambar">Gambar</label> <br>
-                <input type="file" id="gambar" name="gambar">
+                <input type="file" id="gambar" name="gambar" required>
             <input type="submit"name="submit" value="Tambah Data!">
         </form>
     </div>
