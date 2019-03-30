@@ -6,8 +6,9 @@ $admn = query("SELECT * FROM admin ORDER BY id_admin DESC");
 
 ?>
 <html>
+    <link rel="stylesheet" href="css/admin.css">
     <div class="table-semua">
-        <a href="tambah_admin.php">Tambah Admin</a>
+        <a class="tambah-berita-link"href="tambah_admin.php">Tambah Admin</a>
         <table border="1">
             <thead>
                 <tr>
