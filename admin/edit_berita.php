@@ -50,7 +50,6 @@
                     <label name = "isi" id=""><?php echo $brt["isi"]?></label><br>
             <label for="isi" id="isi">Isi Berita</label> <br>
                 <div class="isi-berita-textarea">
-                    <!-- <textarea id="isi" name="isi" style="width:100%; height:300px;"></textarea> -->
                     <textarea class="ckeditor" id="isi" name="isi" required></textarea>
                 </div>
         <label for="gambar">Gambar Berita</label> 

@@ -21,9 +21,11 @@ $index= query("SELECT*FROM berita WHERE id = $id")[0];
 		<div class="post-date">
 			<p><?=$index["tanggal_berita"];?></p>
 		</div>
-		<p class="post-message" style="text-align: justify;">
-			<?=$index["isi"];?>
-		</p>
+		<div>
+			<label class="post-message">
+				<?= $index["isi"];?>
+			</label>			
+		</div>
 	</div>
 
 	<footer class="footer-container-wrapper">
