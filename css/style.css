@@ -50,7 +50,7 @@ h6 {
 	color: #232323;
 }
 
-p {
+p,li {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	font-weight: 300;
