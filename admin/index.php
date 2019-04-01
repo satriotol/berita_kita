@@ -6,7 +6,7 @@ ORDER BY berita.id DESC");
 ?>
 <html>
     <head>
-        <h1>Dashdboard</h1>
+        <h1>Dashboard</h1>
         <h2>Selamat datang,"nama admin"</h2>
     </head>
 </html>
