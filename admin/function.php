@@ -56,7 +56,7 @@ function query($query){
         } 
 
         // cek apakah yang diupload gambar
-        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambarValid = ['jpg','jpeg','png','gif'];
         $ekstensiGambar = explode('.',$namaFile);
         $ekstensiGambar = strtolower (end($ekstensiGambar));
         if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
