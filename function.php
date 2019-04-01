@@ -262,7 +262,7 @@ function hapus_kategori($id){
         $namaFileBaru = uniqid();
         $namaFileBaru .='.';
         $namaFileBaru .=$ekstensiGambar;
-        move_uploaded_file($tmpName,'../upload/'.$namaFileBaru);
+        move_uploaded_file($tmpName,'../upload/slide_photo'.$namaFileBaru);
 
         return $namaFileBaru;
     }
