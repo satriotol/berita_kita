@@ -1,6 +1,7 @@
 /* lihat berita rusak gara gara <li> */
 nav {
 	height: 80px !important;
+	width: 100%;
 	margin: 0 !important;
 	padding: 0 !important;
 }
@@ -132,16 +133,6 @@ li.dropdown {
 	padding-bottom: 2.5%;
 }
 
-@media screen and (max-width: 1080px) {
-	.main-page-header {
-		height: auto;
-	}
-
-	.main-page-container {
-		display: block;
-	}
-}
-
 .label-slider {
 	display: block;
 	width: -webkit-fit-content;
@@ -178,18 +169,6 @@ li.dropdown {
 	margin: auto;
 	-webkit-transform: rotate(90deg) translateX(32.5%);
 	transform: rotate(90deg) translateX(32.5%);
-}
-
-@media screen and (max-width: 320px) {
-	.main-page-label {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 1080px) {
-	.main-page-label {
-		display: none;
-	}
 }
 
 @-webkit-keyframes label {
@@ -256,13 +235,6 @@ div.main-page-slider a:hover {
 
 .posts-container .posts-wrapper {
 	margin: 0;
-}
-
-div.container-wrapper .container {
-	margin: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 }
 
 article {
@@ -381,42 +353,6 @@ h3.post-title a {
 	color: white;
 }
 
-@media screen and (max-width: 1080px) {
-	.post-wrapper {
-		width: 100%;
-	}
-
-	.posts-container {
-		width: 100%;
-	}
-
-	.post-image-container {
-		height: 200px;
-		width: auto;
-
-	}
-
-	div.image-title-message {
-		display: block;
-	}
-
-	div.image-message-wrapper {
-		width: 100%;
-		margin-left: 0;
-		margin-top: 2.5%;
-	}
-
-	div.image-message-wrapper p {
-		width: 100%;
-		font-size: 8pt;
-	}
-
-	h3.post-title {
-		width: 100%;
-		font-size: 10pt;
-	}
-}
-
 /* .aside. */
 
 aside {
@@ -428,12 +364,6 @@ aside {
 	display: -ms-flexbox;
 	display: flex;
 	border-left: 1px solid rgba(128, 128, 128, 0.6);
-}
-
-@media screen and (max-width: 1080px) {
-	aside {
-		display: none;
-	}
 }
 
 /* .aside.video. */

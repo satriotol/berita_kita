@@ -5,8 +5,16 @@ $index = query("SELECT kategori.*,berita.* FROM berita LEFT JOIN kategori on ber
 ORDER BY berita.id DESC");
 ?>
 <html>
-    <head>
-        <h1>Dashboard</h1>
-        <h2>Selamat datang,"nama admin"</h2>
-    </head>
-</html>
+
+<head>
+    <h1>Dashboard</h1>
+    <h2>Selamat datang,"nama admin"</h2>
+</head>
+
+<style>
+
+</style>
+
+<script>  
+</script>
+</html> 

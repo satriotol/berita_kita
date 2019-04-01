@@ -47,7 +47,7 @@
                     <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
                 <?php endwhile;?>
             </select> <br>
-            <p name = "isi" id=""><?php echo $brt["isi"]?></p><br>
+                    <p name = "isi" id=""><?php echo $brt["isi"]?></p><br>
             <label for="isi" id="isi">Isi Berita</label> <br>
                 <div class="isi-berita-textarea">
                     <textarea class="ckeditor" id="isi" name="isi" required></textarea>

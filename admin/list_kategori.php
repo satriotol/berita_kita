@@ -3,8 +3,9 @@ include "layout/header.php";
 require 'function.php';
 $ktgr = query("SELECT * FROM kategori ORDER BY id_kategori ASC");
 ?>
+<link rel="stylesheet" href="css/admin.css">
 <div class="table-semua">
-    <a href="tambah_kategori.php">Tambah Kategori</a>
+    <a class="tambah-berita-link" href="tambah_kategori.php">Tambah Kategori</a>
     <table border="1">
         <thead>
             <tr>

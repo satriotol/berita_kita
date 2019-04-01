@@ -15,6 +15,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/baru.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/baru-responsive.css" media="screen and (max-width: 600px)">
 	<!-- Javascript for custom animation -->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -35,7 +36,7 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right" id="hidden-navbar">
 						<li class="hidden">
 							<a href="#page-top"></a>
 						</li>

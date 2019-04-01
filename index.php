@@ -19,15 +19,6 @@ $video = query("SELECT * FROM video");
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="images/HIMPRO-logo.png">
-    <title>HIMPRO TEKNIK KIMIA UNNES</title>
 </head>
 
 <body id="page-top">
@@ -211,7 +202,7 @@ $video = query("SELECT * FROM video");
                     </div>
                 </div>
                 <br>
-                    <textarea  placeholder="Pesan" name="isi_pesan" id="isi_pesan" cols="60" rows="10" required></textarea>
+                    <textarea  placeholder="Pesan" name="isi_pesan" id="isi_pesan"required></textarea>
                 <br>
                     <input type="hidden" name="tanggal_pengirim" required
                     value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
@@ -224,9 +215,10 @@ $video = query("SELECT * FROM video");
         <a href="#top"><i class="fa fa-angle-up"></i></a>
     </p>
     <!-- footer -->
-        <?php 
+</body>
+
+<?php 
         include "footer.php";
         ?>
-</body>
 
 </html>

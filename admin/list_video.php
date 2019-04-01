@@ -3,7 +3,9 @@ include "layout/header.php";
 require 'function.php';
 $video = query("SELECT * FROM video");
 ?>
-<a href="tambah_video.php">Tambah Video</a>
+<link rel="stylesheet" href="css/admin.css">
+<div class="table-semua">
+<a class="tambah-berita-link" href="tambah_video.php">Tambah Video</a>
 <table border="1">
     <thead>
         <tr>
