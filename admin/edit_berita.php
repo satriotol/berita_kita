@@ -41,13 +41,13 @@
             <input type="text" id="judul" name="judul" placeholder="masukan judul.."
             value="<?=$brt["judul"];?>"> <br>
         <label for="kategori">Kategori Berita</label> 
-            <select name="kategori" id="kategori">
+            <select required name="kategori" id="kategori">
                 <option value="">Pilih Kategori</option>
                 <?php while($row1 = mysqli_fetch_array($result1)):;?>
                     <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
                 <?php endwhile;?>
             </select> <br>
-                    <label name = "isi" id=""><?php echo $brt["isi"]?></label><br>
+            <p name = "isi" id=""><?php echo $brt["isi"]?></p><br>
             <label for="isi" id="isi">Isi Berita</label> <br>
                 <div class="isi-berita-textarea">
                     <textarea class="ckeditor" id="isi" name="isi" required></textarea>
