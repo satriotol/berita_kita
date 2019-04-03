@@ -1,4 +1,39 @@
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
+	html {
+		width: 100% !important;
+	}
+
+	nav {
+		width: 100% !important;
+		padding: 0;
+		border: 0;
+		position: absolute;
+	}
+
+	ul {
+		overflow: hidden;
+		display: flex;
+		position: absolute;
+		right: 0;
+		flex-direction: column;
+		width: 40%;
+		margin: 0;
+		padding: 0;
+		float: right;
+		background-color: #1295C9;
+		height: auto !important;
+	}
+
+	#bs-example-navbar-collapse-2 {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: auto;
+	}
+
+	.post-wrapper {
+=======
     html {
         width: 100% !important;
     }
@@ -40,6 +75,7 @@
     }
 
     .post-wrapper {
+>>>>>>> dacea9f9432029abfde14e10e5916807c6af7afb
 		width: 100%;
 	}
 
