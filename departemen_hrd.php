@@ -2,11 +2,11 @@
 require 'admin/function.php';
 include 'header.php';
 $jumlahDataPerHalaman = 5;
-$jumlahData = count(query("SELECT * FROM berita WHERE kategori = '15' "));
+$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'HRD'"));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = '15'");
+$index = query("SELECT * FROM berita WHERE kategori = 'HRD'  ORDER BY id DESC ");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
 
