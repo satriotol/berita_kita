@@ -26,7 +26,7 @@
 						<i class="fa fa-briefcase color1 ot-circle"></i>
 						<h3>SEMINAR NASIONAL</h3>
 					</div>
-					<a href="semnas.php" class="mz-module-button">read more</a>
+					<a href="chem_semnas.php" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
