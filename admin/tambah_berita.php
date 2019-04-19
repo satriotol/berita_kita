@@ -41,13 +41,49 @@ $result1 = mysqli_query($conn,$query);
             <label for="tanggal_berita">Tanggal</label><br>
                 <input type="date" id="tanggal_berita" name="tanggal_berita" placeholder="Your Tanggal.." 
                 style="border: 1px solid #ccc;width: 100%;padding: 12px 20px;margin: 8px 0;display: block;" required> <br>
-            <label for="kategori">Kategori</label>
-            <br><select required id="kategori" name="kategori">
-                            <option value="">Pilih Kategori</option>
-                            <?php while($row1 = mysqli_fetch_array($result1)):;?>
-                            <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
-                            <?php endwhile;?>
-                        </select>
+            <label for="kategori">Kategori</label><br>
+                <!-- <select required id="kategori" name="kategori">
+                    <option value="">Pilih Kategori</option>
+                    <optgroup label="Swedish Cars">
+                        <?php while($row1 = mysqli_fetch_array($result1)):;?>
+                        <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
+                        <?php endwhile;?>
+                    </optgroup>
+                </select> -->
+                <select required id="kategori" name="kategori">
+                    <option value="">Pilih Kategori</option>
+                    <optgroup label="Article">
+                        <option value="PRESS RELEASE">PRESS RELEASE</option>
+                        <option value="EVENT">EVENT</option>
+                        <option value="CHEMIST">CHEMIST</option>
+                        <option value="ADVOKASI">ADVOKASI</option>
+                        <option value="OPREC">OPREC</option>
+                        <option value="MATERI">MATERI</option>
+                        <option value="CERC">CERC</option>
+                        <option value="STORE">STORE</option>
+                    </optgroup>
+                    <optgroup label="Chemengfair">
+                        <option value="SEMINAR NASIONAL">SEMINAR NASIONAL</option>
+                        <option value="ISO">ISO</option>
+                        <option value="CESA">CESA</option>
+                        <option value="SCC">SCC</option>
+                        <option value="CEPTION">CEPTION</option>
+                        <option value="MACHEMENG AWARDS">MACHEMENG AWARDS</option>
+                    </optgroup>
+                    <optgroup label="Departemen">
+                        <option value="GA">GA</option>
+                        <option value="HRD">HRD</option>
+                        <option value="PRC">PRC</option>
+                        <option value="SED">SED</option>
+                        <option value="Rnt">Rnt</option>
+                        <option value="STD">STD</option>
+                        <option value="SOCDEV">SOCDEV</option>
+                        <option value="TECHNO">TECHNO</option>
+                    </optgroup>
+                    <optgroup label="Lain-Lain">
+                        <option value="Lain-Lain">Lain-Lain</option>
+                    </optgroup>
+                </select>
             <label for="isi">Isi</label> <br>
                 <textarea class="ckeditor" id="isi" name="isi" required></textarea>
             <label for="gambar">Gambar</label> <br>

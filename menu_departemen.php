@@ -35,7 +35,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="hrd.php" target="blank_">
+                <a href="departemen_hrd.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -47,7 +47,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="prc.php" target="blank_">
+                <a href="departemen_prc.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -59,7 +59,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_SED" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -71,7 +71,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_RnT" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
