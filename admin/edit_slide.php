@@ -15,6 +15,7 @@ if(isset($_POST["submit"])){
         echo "
         <script>
             alert ('slide gagal diubah!');
+            document.location.href ='#'
         </script>
         ";
     }

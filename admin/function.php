@@ -284,7 +284,6 @@ function hapus_kategori($id){
             $slide_gambar = $slide_lama;
         } else {
             $slide_gambar = slide_upload();
-
         }
         //query insert data
         $query = "UPDATE slide SET
