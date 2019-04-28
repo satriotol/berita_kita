@@ -163,11 +163,11 @@ $video = query("SELECT * FROM video");
                         <?php foreach($subberita as $row):?>
                         <div>
                             <h3 class="co-card">
-                                <?=$row["judul_sub"];?>
+                                <a target="_blank" href="<?=$row["link_sub"];?> "><?=$row["judul_sub"];?></a>
                             </h3>
                             <p class="co-card">
-                                <?=$row["subjudul_sub"];?> <a target="_blank" href="<?=$row["link_sub"];?> ">Klik
-                                    disini!</a></p>
+                                <?=$row["subjudul_sub"];?> 
+                            </p>
                         </div>
                         <?php endforeach?>
                     </div>
