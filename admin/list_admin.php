@@ -13,7 +13,6 @@ $admn = query("SELECT * FROM admin ORDER BY id_admin DESC");
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama Admin</th>
                     <th>Username</th>
                     <th>Password</th>
                     <th>Aksi</th>
@@ -24,7 +23,6 @@ $admn = query("SELECT * FROM admin ORDER BY id_admin DESC");
             <?php foreach($admn as $row):?>
                 <tr>
                     <td><?= $i; ?></td>
-                    <td><?=$row["nama_admin"];?></td>
                     <td><?=$row["user_admin"];?></td>
                     <td><?=$row["pass_admin"];?></td>
                     <td>

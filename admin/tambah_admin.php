@@ -25,7 +25,6 @@ require 'function.php';
 <head>
     <link href="css/tambah.css"  rel="stylesheet">
 </head>
-    Nama Admin : <input type="text" name="nama_admin" id="nama_admin"> <br>
     Username : <input type="text" name="user_admin" id="user_admin"> <br>
     Password :<br><input type="password" name="pass_admin" id="pass_admin" 
     style="border: 1px solid #ccc;width: 100%;padding: 12px 20px;margin: 8px 0;display: block;"> <br>

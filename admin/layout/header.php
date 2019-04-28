@@ -22,6 +22,7 @@
             <a class="nav-link" href="list_subberita.php">List Sub Berita</a>
             <a class="nav-link" href="list_pesan.php">List Pesan</a>
             <a class="nav-link" href="list_video.php">List Video</a>
+            <a class="nav-link" href="login.php">LOGIN</a>
         </ul>
     </div>
 </body>

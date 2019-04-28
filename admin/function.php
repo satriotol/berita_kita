@@ -150,13 +150,12 @@ function hapus_kategori($id){
 //admin
     function tambah_admin($data){
         global $conn;
-        $nama_admin = htmlspecialchars($data["nama_admin"]);
         $user_admin = strtolower(stripslashes ($data["user_admin"]));
         $pass_admin = mysqli_real_escape_string($conn,$data["pass_admin"]);
         $pass_admin2= mysqli_real_escape_string($conn,$data["pass_admin2"]); 
     //cek username sudah ada atau belum
-        $result = mysqli_query($conn, "SELECT user_admin FROM admin 
-            WHERE user_admin = '$user_admin'");
+    $result = mysqli_query($conn, "SELECT user_admin FROM admin 
+    WHERE user_admin = '$user_admin'");
         if (mysqli_fetch_assoc($result)){
             echo "<script>
                 alert ('username sudah pernah terpakai, buat lagi!')
@@ -164,24 +163,19 @@ function hapus_kategori($id){
             return false;
         }
     //cek konfirmasi password
-        if($pass_admin !== $pass_admin2){
-            echo "<script>
+    if($pass_admin !== $pass_admin2){
+        echo "<script>
                 alert('konfirmasi password tidak sesuai');
                 </script>";
             return false();
         }
     //enkripsi password
-        $pass_admin = password_hash($pass_admin, PASSWORD_DEFAULT);
+    $pass_admin = password_hash($pass_admin, PASSWORD_DEFAULT);
     //tambahkan user baru ke database
-        mysqli_query($conn, "INSERT INTO 
-        admin VALUES('','$nama_admin','$user_admin','$pass_admin')");
+        mysqli_query($conn, "INSERT INTO admin VALUES('','$user_admin','$pass_admin')");
 
         return mysqli_affected_rows($conn);
     }
-    // function ubah_admin($data) {
-    //     global $conn;
-    //     $query = mysqli_query($conn, "SELECT user_admin FROM admin WHERE user_admin = '$user_admin'");
-    // }
     function hapus_admin($id){
         global $conn;
         mysqli_query($conn,"DELETE FROM `admin` WHERE `id_admin` = $id");
