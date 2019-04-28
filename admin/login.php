@@ -33,35 +33,39 @@ if(isset($_POST["login"])){
 }
 
 ?>
-<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Halaman Login</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/admin.css" />
+    <script src="main.js"></script>
 </head>
+
 <body>
-    
-    <h1>Halaman Login</h1>
-
-    <?php if(isset($error)) : ?>
-    <p style="color:red;font-style:italic;">username / password salah</p>
-    <?php endif; ?>
-
-    <form action="" method="post">
-    
-        <ul>
-            <li>
-                <label for="username">Username :</label>
+    <div class="form-container-wrapper">
+        <div class="form-container">
+            <form action="" method="post">
+                <label for="">Username : </label>
+                <br>
                 <input type="text" name="user_admin" id="user_admin">
-            </li>
-            <li>
-                <label for="password">Password :</label>
+                <br>
+                <label for="Password">Password :</label>
+                <br>
                 <input type="password" name="pass_admin" id="pass_admin">
-            </li>
-            <li>
+                <br>
                 <button type="submit" name="login">Login</button>
-            </li>
-        </ul>
-
-    </form>
+                <?php if(isset($error)) : ?>
+                <br><br><label style="color:red;font-style:italic;">username / password salah</label>
+                <?php endif; ?>
+            </form>
+        </div>
+    </div>
 </body>
+
+</html>
+</body>
+
 </html>
