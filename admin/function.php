@@ -16,10 +16,9 @@ function query($query){
         //ambil data dari tiap elemen dalam form
         $judul = htmlspecialchars($data["judul"]);
         $kategori = htmlspecialchars($data["kategori"]);
-        // $isi = strip_tags($data["isi"],'<br>,<p>,text-align: justify;');
         $isi = nl2br($data["isi"],false);
-        // $isi = $data["isi"];
         $tanggal_berita = htmlspecialchars($data["tanggal_berita"]);
+
         //Upload gambar
         $gambar = upload();
         if(!$gambar){
@@ -35,8 +34,6 @@ function query($query){
             $query = "INSERT INTO berita VALUES ('','$judul','$isi','$kategori','$gambar','$tanggal_berita')";
             mysqli_query($conn,"$query");
         }
-        // $query = "INSERT INTO berita VALUES ('','$judul','$isi','$kategori','$gambar','$tanggal_berita')";
-        // mysqli_query($conn,"$query");
 
         return mysqli_affected_rows($conn);
     }
@@ -118,60 +115,33 @@ function query($query){
 
         return mysqli_affected_rows($conn);
     }
-function tambah_kategori($data){
-    //query insert data
 
-    global $conn;
-    $nama_kategori = htmlspecialchars($data["nama_kategori"]);
-    $query = "INSERT INTO kategori VALUES ('','$nama_kategori')";
-    mysqli_query($conn,"$query");
-    return mysqli_affected_rows($conn);
-}
-function ubah_kategori($data){
-    global $conn;
-    //ambil data dari tiap elemen dalam form
-    $id = $data["id_kategori"];
-    $nama_kategori = htmlspecialchars($data["nama_kategori"]);
-
-    //query insert data
-    $query = "UPDATE kategori SET
-        nama_kategori='$nama_kategori'
-        WHERE id_kategori = $id; 
-    ";
-    mysqli_query($conn,"$query");
-
-    return mysqli_affected_rows($conn);
-}
-function hapus_kategori($id){
-    global $conn;
-    mysqli_query($conn,"DELETE FROM kategori WHERE id_kategori = $id");
-    return mysqli_affected_rows($conn);
-}
 //admin
     function tambah_admin($data){
         global $conn;
         $user_admin = strtolower(stripslashes ($data["user_admin"]));
         $pass_admin = mysqli_real_escape_string($conn,$data["pass_admin"]);
         $pass_admin2= mysqli_real_escape_string($conn,$data["pass_admin2"]); 
-    //cek username sudah ada atau belum
-    $result = mysqli_query($conn, "SELECT user_admin FROM admin 
-    WHERE user_admin = '$user_admin'");
+
+        //cek username sudah ada atau belum
+        $result = mysqli_query($conn, "SELECT user_admin FROM admin 
+        WHERE user_admin = '$user_admin'");
         if (mysqli_fetch_assoc($result)){
             echo "<script>
                 alert ('username sudah pernah terpakai, buat lagi!')
                 </script>";
             return false;
         }
-    //cek konfirmasi password
-    if($pass_admin !== $pass_admin2){
-        echo "<script>
+        //cek konfirmasi password
+        if($pass_admin !== $pass_admin2){
+            echo "<script>
                 alert('konfirmasi password tidak sesuai');
                 </script>";
-            return false();
-        }
-    //enkripsi password
-    $pass_admin = password_hash($pass_admin, PASSWORD_DEFAULT);
-    //tambahkan user baru ke database
+            return false;
+        }    
+        //enkripsi password
+        $pass_admin = password_hash($pass_admin, PASSWORD_DEFAULT);
+        //tambahkan user baru ke database
         mysqli_query($conn, "INSERT INTO admin VALUES('','$user_admin','$pass_admin')");
 
         return mysqli_affected_rows($conn);

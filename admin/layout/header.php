@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["login"])){
+    echo "Welcome '{$_SESSION['user_admin']}'";
+    header("Location: login.php");
+    exit;
+}
+?> 
+
 <html>
 
 <head>
@@ -22,7 +32,7 @@
             <a class="nav-link" href="list_subberita.php">List Sub Berita</a>
             <a class="nav-link" href="list_pesan.php">List Pesan</a>
             <a class="nav-link" href="list_video.php">List Video</a>
-            <a class="nav-link" href="login.php">LOGIN</a>
+            <a class="nav-link" href="logout.php">LOGOUT</a>
         </ul>
     </div>
 </body>
@@ -35,4 +45,4 @@
             $(this).addClass('activeMenuItem');
         }
     });
-</script> 
+</script>

@@ -1,8 +1,13 @@
 <?php
+session_start();
 
-include "layout/header.php";
+if( isset($_SESSION["login"])){
+    header("Location: index.php");
+    exit;
+}
+
+// include "layout/header.php";
 require 'function.php';
-
 if(isset($_POST["login"])){
 
     $user_admin = $_POST["user_admin"];
@@ -10,12 +15,14 @@ if(isset($_POST["login"])){
 
     $result = mysqli_query($conn,"SELECT * FROM admin WHERE user_admin = '$user_admin'");
 
-    //Cek user_admin
+    //Cek Username
     if(mysqli_num_rows($result) === 1){
 
-        // cek pass_admin
+        // cek password
         $row = mysqli_fetch_assoc($result);
         if (password_verify($pass_admin,$row["pass_admin"])){
+            $_SESSION["login"] = true;
+
             header ("Location: index.php");
             exit;
         }
@@ -36,18 +43,18 @@ if(isset($_POST["login"])){
     <h1>Halaman Login</h1>
 
     <?php if(isset($error)) : ?>
-    <p style="color:red;font-style:italic;">user_admin / pass_admin salah</p>
+    <p style="color:red;font-style:italic;">username / password salah</p>
     <?php endif; ?>
 
     <form action="" method="post">
     
         <ul>
             <li>
-                <label for="user_admin">user_admin :</label>
+                <label for="username">Username :</label>
                 <input type="text" name="user_admin" id="user_admin">
             </li>
             <li>
-                <label for="pass_admin">pass_admin :</label>
+                <label for="password">Password :</label>
                 <input type="password" name="pass_admin" id="pass_admin">
             </li>
             <li>
