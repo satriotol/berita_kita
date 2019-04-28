@@ -20,6 +20,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/animate.js"></script>
+	<title>HIMPRO TEKNIK KIMIA UNNES | KABINET PRESTASI</title>
+	<link rel="shortcut icon" href="images/HIMPRO-logo.png" type="image/png">
 </head>
 
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #1295C9; background-blend-mode: color; border: none">
