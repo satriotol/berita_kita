@@ -56,15 +56,15 @@
 		width: 100%;
 		font-size: 10pt;
 	}
-}
 
-@media screen and (max-width: 600px) {
+	.form-cari {
+		visibility: visible !important;
+	}
+	
 	aside {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 600px) {
 	.main-page-header {
 		height: auto;
 	}
@@ -72,15 +72,11 @@
 	.main-page-container {
 		display: block;
 	}
-}
 
-@media screen and (max-width: 600px) {
 	.main-page-label {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 600px) {
 	.main-page-label {
 		display: none;
 	}

@@ -375,7 +375,7 @@ aside form {
 
 
 aside form input[type=text] {
-	width: 90%;
+	width: 100%;
 }
 
 aside form input[type=submit] {

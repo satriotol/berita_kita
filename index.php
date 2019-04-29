@@ -102,6 +102,9 @@ $video = query("SELECT * FROM video");
         </div>
         <div class="main-page-container">
             <section class="posts-container">
+                <form class="form-cari" style="visibility: hidden;" action="get">
+                    <input class="form-control input-cari" type="text" placeholder="Cari">
+                </form>
                 <?php foreach ($index as $row) : ?>
                 <div class="posts-wrapper">
                     <article>
@@ -152,7 +155,6 @@ $video = query("SELECT * FROM video");
                     <form action="get">
                         <input class="form-control input-cari" type="text" placeholder="Cari">
                         <br>
-                        <input class="form-control" type="submit" value="Cari">
                     </form>
                     <br>
                     <h2 class="video-hmptk">Video HMPTK</h2>
@@ -201,6 +203,7 @@ $video = query("SELECT * FROM video");
                 <input class="form-control" placeholder="Email" type="text" name="email_pengirim" id="email_pengirim" required>
                 <br>
                 <textarea class="form-control" style="width:60%; height: 20%; margin: auto;"  placeholder="Pesan" name="isi_pesan" id="isi_pesan"required></textarea>
+                <br>
                 <br>
                     <input class="btn btn-primary-mb2" type="hidden" name="tanggal_pengirim" required
                     value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>

@@ -62,6 +62,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" data-parent=".container">
             <ul class="nav navbar-nav navbar-right" id="hidden-navbar">
                 <li>
