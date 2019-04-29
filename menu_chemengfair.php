@@ -26,7 +26,6 @@
 						<i class="fa fa-briefcase color1 ot-circle"></i>
 						<h3>SEMINAR NASIONAL</h3>
 					</div>
-					<a href="semnas.php" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
@@ -37,7 +36,6 @@
 						<i class="fa fa-photo color2 ot-circle"></i>
 						<h3>ISO</h3>
 					</div>
-					<a href="iso.php" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
@@ -48,7 +46,6 @@
 						<i class="fa fa-camera-retro color3 ot-circle"></i>
 						<h3>CESA</h3>
 					</div>
-					<a href="cesa.php" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
@@ -59,7 +56,6 @@
 						<i class="fa fa-cube color4 ot-circle"></i>
 						<h3>SCC</h3>
 					</div>
-					<a href="scc.php" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
@@ -70,7 +66,6 @@
 						<i class="fa fa-cube color4 ot-circle"></i>
 						<h3>CEPTION</h3>
 					</div>
-					<a href="#" class="mz-module-button">read more</a>
 				</div>
 			</div>
 			<!-- end about module -->
@@ -81,7 +76,6 @@
 						<i class="fa fa-cube color4 ot-circle"></i>
 						<h3>MACHEMENG AWARDS</h3>
 					</div>
-					<a href="#" class="mz-module-button">read more</a>
 				</div>
 			</div>
 		</div>
