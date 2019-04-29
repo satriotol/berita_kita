@@ -3,6 +3,7 @@ nav {
 	height: 80px !important;
 	width: 100%;
 	margin: 0 !important;
+	background: linear-gradient(rgba(10, 105, 143, 0.75), rgb(2, 65, 90)),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
 	padding: 0 !important;
 }
 
@@ -62,7 +63,7 @@ li.dropdown {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #fed136;
+	background: linear-gradient(rgba(10, 105, 143, 0.75), rgb(2, 65, 90)),url(../images/texture.jpg) repeat 0 0 / 50% auto !important;	
 	-webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
@@ -121,7 +122,6 @@ li.dropdown {
 	color: white;
 }
 
-
 .main-page-container {
 	margin: 0;
 	padding: 0;
@@ -134,6 +134,7 @@ li.dropdown {
 }
 
 .label-slider {
+	
 	display: block;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
@@ -366,6 +367,24 @@ aside {
 	border-left: 1px solid rgba(128, 128, 128, 0.6);
 }
 
+aside form {
+	margin: auto;
+	display: flex;
+	max-width: 75%;
+}
+
+
+aside form input[type=text] {
+	width: 90%;
+}
+
+aside form input[type=submit] {
+	background-color: #1295C9;
+	color: white;	
+	width: 22.5%;
+	float: right
+}
+
 /* .aside.video. */
 
 aside div.aside-iframe-container {
@@ -478,9 +497,9 @@ aside div.aside-iframe-container iframe {
 /* .contact.us */
 
 .contact-us-wrapper {
+	background: linear-gradient(rgba(10, 105, 143, 0.75), rgb(2, 65, 90)),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
 	height: 500px;
 	width: 100%;
-	background-color: rgb(10, 105, 143);
 }
 
 /* Anyar */
@@ -502,13 +521,13 @@ aside div.aside-iframe-container iframe {
 .contact-us-container1 form {
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
-	width: fit-content;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
 	height: auto;
-	margin-top: 25px;
-	padding-top: 6.25%;
-	padding-bottom: 6.25%;
-	padding-left: 15%;
-	padding-right: 25%;
+	margin: auto;
+	justify-content: center;
+	margin-top: 7.5%;
 }
 
 .contact-us-container1 form div {
@@ -516,25 +535,28 @@ aside div.aside-iframe-container iframe {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-}
-
-.contact-us-container1 form div div {
-	width: 100%;
-	float: right;
+	margin: auto;
 }
 
 .contact-us-container1 form input[type=submit] {
 	background-color: #1295C9;
 	border: 0;
 	color: white;
-	border-radius: 10px;
+	border-radius: 50px;
 	width: 20%;
 	height: 7.5%;
+	margin: auto;
 }
 
-.contact-us-container1 form button:hover {
-	background-color: #fed136;
+.contact-us-container1 form input[type=text] {
+	margin: auto;
+	width: 60%;
 }
+
+.contact-us-container1 form input[type=textarea] {
+	margin: auto;
+	width: 60%;
+} 
 
 .contact-us-container1 form label {
 	color: white;
@@ -646,7 +668,6 @@ div.footer-socmed a:hover {
 .post-container-wrapper {
 	width: 100%;
 	height: auto;
-	background-color: rgb(243, 243, 243);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

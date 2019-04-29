@@ -656,11 +656,11 @@ div.footer-socmed a:hover {
 .post-container-wrapper {
 	width: 100%;
 	height: auto;
-	background-color: rgb(243, 243, 243);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 80px;
+	background: linear-gradient(rgba(248, 248, 248, 0.9), rgb(255, 255, 255,0.9)) ,url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
 }
 
 .post-container {

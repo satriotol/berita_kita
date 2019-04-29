@@ -15,8 +15,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/baru.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/baru-responsive.css" media="screen and (max-width: 768px)">
-    <!-- Javascript for custom animation -->
+    <link rel="stylesheet" href="css/baru-responsive.css" media="screen and (max-width: 768px)">    <!-- Javascript for custom animation -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/animate.js"></script>
@@ -26,7 +25,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" onclick="switchdropdown()">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -34,27 +33,8 @@
             </button>
             <a class="navbar-brand page-scroll" href="index.php"><img src="images/HIMPRO-logo.png" alt="Himprotekkim" height="60px"></a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav navbar-right" id="hidden-navbar">
-                <li>
-                    <a class="nav-link" style="color: white" href="#">About</a>
-                </li>
-                <li>
-                    <a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
-                </li>
-                <li>
-                    <a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
-                </li>
-                <li>
-                    <a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id" target="_blank">Jurusan</a>
-                </li>
-                <li>
-                    <a class="nav-link" style="color: white" href="index.php#contact-us">Kontak</a>
-                </li>
-            </ul>
-        </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-parent=".container">
             <ul class="nav navbar-nav navbar-right" id="hidden-navbar">
                 <li class="hidden">
                     <a href="#page-top"></a>
@@ -72,13 +52,32 @@
                     <a class="nav-link" style="color: white" href="isi_data_alumni.php" target="_blank">Alumni</a>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-link" style="color: white" href="#">About</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="color: white" href="#">About</a>
                     <div class="dropdown-content" style="background-color: #1295C9">
                         <a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
                         <a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
                         <a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id" target="_blank">Jurusan</a>
                         <a class="nav-link" style="color: white" href="index.php#contact-us">Kontak</a>
                     </div>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" data-parent=".container">
+            <ul class="nav navbar-nav navbar-right" id="hidden-navbar">
+                <li>
+                    <a class="nav-link" href="aboutus.php">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id" target="_blank">Jurusan</a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: white" href="index.php#contact-us">Kontak</a>
                 </li>
             </ul>
         </div>
@@ -93,9 +92,17 @@
             $(this).addClass('activeMenuItem');
         }
     });
-    $(document).ready(function() {
-        $(".dropdown").click(function(e) {
-            $("#bs-example-navbar-collapse-2").show();
-        });
+
+    function switchdropdown() {
+        if ($("#bs-example-navbar-collapse-1").is(':hidden')) {
+            $("#bs-example-navbar-collapse-2").css("visibility", "visible");
+        }
+        if ($("#bs-example-navbar-collapse-2").is(':visible')) {
+            $("#bs-example-navbar-collapse-2").css("visibility", "hidden");
+        }
+    }
+    
+    $(document).ready(function () {
+        $('#bs-example-navbar-collapse-2').css("visibility", "hidden");
     });
 </script> 
