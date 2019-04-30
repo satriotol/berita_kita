@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 26, 2019 at 03:24 PM
+-- Generation Time: Apr 30, 2019 at 03:43 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -30,17 +30,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `id_admin` int(5) NOT NULL,
-  `nama_admin` varchar(25) NOT NULL,
   `user_admin` varchar(15) NOT NULL,
-  `pass_admin` varchar(32) NOT NULL
+  `pass_admin` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id_admin`, `nama_admin`, `user_admin`, `pass_admin`) VALUES
-(1, 'Satrio', 'admin', '$2y$10$wYLFzgPdobUQ.a8Zf6KoLe.p1');
+INSERT INTO `admin` (`id_admin`, `user_admin`, `pass_admin`) VALUES
+(17, 'admin', '$2y$10$1RSqhwQPzyqH.W3IzIzD4uoAXM6PNswBuv6ELRiq2ALQ4HR3kYBdC'),
+(18, 'satrio', '$2y$10$lqckBuBlsgqU0mopnGFTp.rSbWZqsgxAGkPGmOSIG8cZtZwAtjbei');
 
 -- --------------------------------------------------------
 
@@ -66,7 +66,8 @@ INSERT INTO `alumni` (`id_alumni`, `nama_lengkap`, `email`, `alamat_sekarang`, `
 (3, 'Satrio Jati Wicaksono', 'satriotol69@gmail.com', 'Jl. Pandean Lamper 69 B', 2147483647, '-', '2017/S1'),
 (4, 'Satrio Baru', 'sakdaodkaok', 'aoskdoakodak', 0, '', ''),
 (5, 'Herman', 'asdas', 'asdasda', 0, '', ''),
-(6, 'asdasd', 'asd', 'asd', 0, 'asd', '');
+(6, 'asdasd', 'asd', 'asd', 0, 'asd', ''),
+(7, 'Satrio Jati Wicaksono', 'satriotol69@gmail.com', 'Jl. Pandean Lamper 69 B', 2147483647, '-', '2017/S1');
 
 -- --------------------------------------------------------
 
@@ -88,14 +89,9 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `judul`, `isi`, `kategori`, `gambar`, `tanggal_berita`) VALUES
-(37, 'PRESS RELEASE MTMTK 2018', '<p>Himpunan Mahasiswa Profesi Teknik Kimia (HMPTK) Universitas Negeri Semarang pada Senin (17/12) telah melaksanakan kegiatan Kunjungan Kerja dengan Himpunan Mahasiswa Program Studi Teknik Kimia (HMPSTK) Universitas Katolik Parahyangan di Ruang Graha Cendekia Gedung E2 Fakultas Teknik Universitas Negeri Semarang. Kegiatan Kunjungan kerja bertujuan untuk sharing program kerja, sharing antar himpunan agar kedepannya menjadi lebih baik, serta menjalin silaturahim antar himpunan.<br />Kegiatan kunjungan ini dimulai dengan sambutan dari ketua HMPTK lalu dilanjutkan dengan ketua HMPSTK. Kemudian acara selanjutnya adalah pemaparan program kerja masing-masing himpunan selama 1 periode beserta kepengurusannya. Masuk kedalam acara inti dari kunjungan ini adalah Focus Group Discussion (FGD) atau diskusi melingkar masing-masing bidang antara HMPTK dengan HMPSTK untuk sharing program kerja yang berkaitan dengan kendala-kendalanya serta saran agar kedepannya lebih lancar dan tidak ada kendala. Acara dimeriahkan dengan hiburan dari kolaborasi grup musik HMPTK dan HMPSTK kemudian ditutup dengan pemberian kenang-kenangan dan foto bersama di sekitar Tugu Sutera Universitas Negeri Semarang.<br />Kegiatan Kunjungan Kerja berjalan dengan lancer. Diharapkan kunjungan ini dapat mengikat tali silaturahmi dan saling bertukar ilmu untuk menambah wawasan bagi kedua pihak.</p>', '13', '5c7bcd1e1e0ee.jpeg', '2019-03-03'),
-(38, 'PRESS RELEASE Kunjungan Kerja HMPSTK Unpar - HMPTK UNNES', 'Himpunan Mahasiswa Profesi Teknik Kimia (HMPTK) Universitas Negeri Semarang pada Senin (17/12) telah melaksanakan kegiatan Kunjungan Kerja dengan Himpunan Mahasiswa Program Studi Teknik Kimia (HMPSTK) Universitas Katolik Parahyangan di Ruang Graha Cendekia Gedung E2 Fakultas Teknik Universitas Negeri Semarang. Kegiatan Kunjungan kerja bertujuan untuk sharing program kerja, sharing antar himpunan agar kedepannya menjadi lebih baik, serta menjalin silaturahim antar himpunan.<br>\r\nKegiatan kunjungan ini dimulai dengan sambutan dari ketua HMPTK lalu dilanjutkan dengan ketua HMPSTK. Kemudian acara selanjutnya adalah pemaparan program kerja masing-masing himpunan selama 1 periode beserta kepengurusannya. Masuk kedalam acara inti dari kunjungan ini adalah Focus Group Discussion (FGD) atau diskusi melingkar masing-masing bidang antara HMPTK dengan HMPSTK untuk sharing program kerja yang berkaitan dengan kendala-kendalanya serta saran agar kedepannya lebih lancar dan tidak ada kendala. Acara dimeriahkan dengan hiburan dari kolaborasi grup musik HMPTK dan HMPSTK kemudian ditutup dengan pemberian kenang-kenangan dan foto bersama di sekitar Tugu Sutera Universitas Negeri Semarang.<br>\r\nKegiatan Kunjungan Kerja berjalan dengan lancer. Diharapkan kunjungan ini dapat mengikat tali silaturahmi dan saling bertukar ilmu untuk menambah wawasan bagi kedua pihak.', '12', '5c7bcd45e569e.jpg', '2019-03-03'),
-(41, 'PRESS RELEASE Chemical Engineering Paper Competiion (CEPTION) 2018', 'Himpunan Mahasiswa Profesi Teknik Kimia (HMPTK) Universitas Negeri Semarang pada tanggal 9-11 November 2018 telah melaksanakan kegiatan lomba karya tulis ilmiah Ception (Chemical Engineering Paper Competition) di gedung Dekanat Fakultas Teknik Universitas Negeri Semarang. Lomba LKTI tingkat Nasional ini diselenggarakan oleh HMPTK FT UNNES yang dilaksanakan untuk ketiga kalinya. Acara ini bertujuan untuk mengembangkan dan menyalurkan kreasi teknologi yang inovatif mahasiswa sebagai akselerator dalam mewujudkan Indonesia berbasis SDGs 2030 yang meliputi bidang energi, pangan, lingkungan, kesehatan, kemaritiman, pertanian dan industri. Selain itu juga untuk memperkenalkan Jurusan Teknik Kimia FT UNNES kepada mahasiswa diseluruh Indonesia. Acara ini dibuka oleh wakil Dekan III Bidang Kemahasiswaan FT UNNES Dr. Wirawan Sumbodo, M.T. dalam sambutannya beliau berharap agar para peserta dapat memberikan solusi dan bagi penguasaan IPTEK untuk pengelolaan Sumber Daya Alam Indonesia yang berlimpah untuk kesejahteraan bangsa Indonesia. Acara ini juga dihadiri oleh Pembina HMPTK Redenrara Dewi Artanti Putri Ception 2018 diikuti oleh 29 tim peserta dari PTN/PTS se Indonesia, 9 diantaranya masuk sebagai finalis. Pelaksanaan Ception 2018 ini dilaksanakan selama 3 hari, hari pertama yaitu Technical Meeting untuk seluruh finalis, hari kedua presentasi karya ilmiah dari 10 finalis dan dilanjutkan hari ketiga yaitu acara field trip Kota Semarang dan Lensa Sosial di Tabiyatul Yatim, Semarang yang telah menjadi ciri khas dari Ception itu sendiri. Paparan 9 finalis terbaik dilaksanakan pada tanggal 10 November bertempat di Dekanat lantai 3 Fakultas Teknik Unnes. Dalam babak final terdapat sesi tanya jawab yang diberikan juri untuk para finalis. Tim dari Universitas Ahmad Dahlan berhasil menyabet gelar juara 1 pada Ception tahun ini dan mendapatkan piala, piagam penghargaan serta dana pembinaan sebesar 3,5 juta rupiah. Sedangkan juara 2 dan 3 diraih oleh Institut Teknologi Sebelas November dan Institut Pertanian Bogor, dengan mendapatkan piala, piagam serta dana pembinaan masing-masing 2 juta dan 1juta rupiah. Selain juara 1,2,3 terdapat Penghargaan Best Presentation yang diraih oleh Universitas Tadulako dan Best Poster diraih oleh Universitas Dian Nuswantoro. Suka cita sekaligus bangga terlihat dari raut wajah Finalis Ception yang telah berhasil melewati tahap demi tahap perlombaan. Sekali lagi selamat bagi para pemenang Ception 2018, kami tunggu kehadirannya kembali di ajang perlombaan Ception tahun berikutnya.', '9', '5c7ccced6d3c9.jpg', '2019-03-04'),
-(44, 'Ronaldo', '<p>Cristiano Ronaldo dos Santos Aveiro, OIH (Portugis: [kÉ¾iÊƒËˆtjÉnu ÊoËˆnaÉ«du] lahir di Funchal, Madeira, Portugal, 5 Februari 1985; umur 34 tahun) atau lebih dikenal Cristiano Ronaldo merupakan seorang pemain sepak bola Portugal. Ia dapat berposisi sebagai sayap kiri atau kanan serta penyerang tengah. Saat ini ia bermain untuk tim Italia, Juventus dan untuk tim nasional Portugal. Sebelum bermain untuk Real Madrid, ia pernah bermain di Sporting Lisboa dan Manchester United. Pemain yang kerap bernomor punggung 7 di lapangan hijau ini juga akrab dengan sebutan CR7, gabungan dari inisial nama dan nomor punggungnya.<br /><br />Dia memakai nomor punggung 7 di United, yang sebelumnya dikenakan oleh Johnny Berry, George Best, Steve Coppell, Bryan Robson, Eric Cantona dan David Beckham. Setelah menghabiskan tahun pertamanya di Madrid mengenakan nomor punggung 9, ia mulai mengenakan nomor 7 lagi menyusul kepergian pemain legendaris Raul Gonzalez.<br /><br />Segudang prestasi telah berhasil dia raih. Cristiano Ronaldo berhasil meraih gelar FIFA Ballon D&rsquo;Or di bulan Januari 2015 lalu yang diadakan di markas FIFA Zurich, Swiss. Gelar FIFA Ballon D&rsquo;Or ini merupakan penghargaan ketiga bagi Ronaldo, setelah sebelumnya pada tahun 2013 lalu dan 2008 ketika masih berseragam Manchester United.[2]&nbsp;</p>', '14', '5c8f00b6e59a0.jpeg', '2019-03-18'),
-(45, 'Unnes', 'Konvensi Nasional Pendidikan Indonesia (Konaspi) merupakan wahana akademik kaum pendidik Indonesia untuk memberikan sumbangan pemikiran bagi pembangunan manusia seutuhnya melalui pendidikan. Konaspi IX yang dilaksanakan di Universitas Negeri Padang pada 13-16 Maret  2019 berhasil merumuskan rekomendasi yang disebut sebagai  Deklarasi Padang. Deklarasi Padang dibacakan di Auditorium Universitas Negeri Padang, Jumat malam, 15/3. Rektor UNNES Prof [â€¦]<br>\r\n', '8', '5c8f4337c1ff7.jpeg', '2019-03-18'),
-(46, 'CESA FUTSAL CUP 2015', 'SEMARANG - Himpunan Mahasiswa Profesi Teknik Kimia (HMPTK) UNNES mempersembahkan Turnamen CESA FUTSAL CUP, sebagai salah satu event tahunan program kerja HMPTK UNNES. Chemical Engineering Student Assosiation (CESA) FUTSAL CUP 2015 Season II, mulai membuka pendaftaran pada tanggal 1 September dan dipastikan kick off pada 28 November mendatang.<br>\r\nTurnamen CESA FUTSAL CUP 2015 akan diadakan pada 28-29 November di Tunjang Futsal Studium, Jalan Soekarno Hatta No. 188A Semarang (Depan Kampus Biru AMNI). Total hadiah sejumlah 7 juta rupiah yakni berupa uang pembinaan dan trophy, top scorer dan best player. Turnamen ini akan memperebutkan trophy Kementerian Pemuda dan Olahraga Republik Indonesia. Turnamen ini dibuka untuk umum (dibuktikan dengan KTP). Technical Meeting akan diadakan pada tanggal 21 November 2015 di Tunjang Futsal Studium.<br>\r\nSistem pertandingan sendiri menggunakan sistem gugur dengan waktu pertandingan 2 x 10 menit hingga perempat final, sementara pada semifinal dan final menggunakan waktu pertndingan 2 x 15 menit. Ketentuan lainnya akan dijelaskan melalui peraturan pertandingan.<br>\r\nSyarat untuk mengikuti turnamen ini yaitu :<br>\r\na. Pemain adalah Masyarakat umum yang dibuktikan dengan KTP yang masih berlaku.<br>\r\nb. 1 tim terdiri dari 12 orang (10 pemain, 1 official, 1 manager).<br>\r\nc. 1 orang pemain hanya boleh mewakili 1 tim.<br>\r\nUntuk informasi lebih lanjut dan bagi tim yang ingin mendaftar dapat menghubungi Febry pada nomor 085695505317 (588BFF3B) atau Dwi Waluyo pada nomor 085641650331 (74594A7C). Pendaftaran dikenakan biaya sebesar Rp. 300.000/tim.', '12', '5c973d624dff6.jpg', '2019-03-24'),
-(49, 'PRESS RELEASE Mahasiswa Teknik Kimia UNNES Laksanakan International Research Collaboration', '<p>Semarang (02/01/2019). Selamat dan sukses kepada Mahasiswa Teknik Kimia, Universitas Negeri Semarang yang telah melaksanakan International Research Collaboration. Wakil Dekan Bidang Kemahasiswaan Fakultas Teknik Universitas Negeri Semarang melepas dua Mahasiswa Teknik Kimia yang akan melaksanakan penelitian dan pengambilan data sebagai bentuk implementasi dari International Research Collaboration di Universiti Teknologi Malaysia, Johor Bahru. Yang merupakan bimbingan dari Dr. Ratna Dewi Kusumaningtyas, S. T., M. T.. Mahasiswa Teknik Kimia yang mengikuti kegiatan tersebut adalah:</p><p>&nbsp;</p><p>Dwi Nuryana (Teknik Kimia, 2015)&nbsp;</p><p>&nbsp;</p><p>Muhammad Fahrul Rahman Alim (Teknik Kimia, 2015)</p><p>&nbsp;</p><p>Kegiatan tersebut dilaksanakan pada tanggal 5 januari - 1 Februari 2019. Awalnya penelitian tersebut dilaksanakan dilaboratorium Teknik Kimia UNNES yang selanjutnya akan dilakukan penyempurnaan di Universiti Teknologi Malaysia. kelanjutan dari penelitian tersebut yaitu pengajuan proposal dengan judul &ldquo;Microwave Assisted Pyrolysis (MAP) Limbah Biomassa untuk Pembuatan Green Fuel Bio-Hidrogen dan Adsorben Peyimpan Bahan Bakar Gas&rdquo;.&nbsp;</p><p>&nbsp;</p><p>Keberhasilan kegiatan ini diraih berkat bantuan keluarga, kerabat, teman, dan seluruh dosen yang selalu mendukung dan mendoakan yang terbaik untuk kelancaran dan kesuksesan anak didiknya.&nbsp; Semoga keberhasilan&nbsp; Dwi Nuryana dan Muhammad Fahrul Rahman Alim dapat menjadi inspirasi dan motivasi bagi mahasiswa lain untuk terus berkarya dan berprestasi.&nbsp;</p><p>Salam Yes We Can !!!</p>', '8', '5c97abdfb5eb4.jpg', '2019-03-24'),
-(51, 'PRESS RELEASE MTMTK 2018', '<p>Himpunan Mahasiswa Profesi Teknik Kimia telah melaksanakan Musyawarah Tinggi Mahasiswa Teknik Kimia (MTMTK) 2018 pada tanggal 22 Desember 2018 yang bertempat di Graha Cendekia E2 Fakultas Teknik Universitas Negeri Semarang. Musyawarah Tinggi Mahasiswa Teknik Kimia merupakan forum musyawarah tertinggi mahasiswa teknik kimia. Secara garis besar, MTMTK bertujuan untuk membahas dan mengubah konstitusi yang dirasa perlu untuk dirubah dan mengevaluasi kinerja mepengurusan HMPTK 2018 sekaligus pendemisioneran kepengurusan HMPTK 2018.<br />Acara MTMTK 2018 ini dihadiri oleh Koordinator DPH HMPTK 2018, pembina HMPTK 2018. Dalam sambutannya, Ibu Dewi Artanti Putri S.T., M.T menyampaikan pesan pesannya untuk pengurus baru agar lebih ditingkatkan lagi kinerjanya guna menuju tahun akreditasi Teknik Kimia di tahun 2019.<br /><br />MTMTK 2018 pada kali ini dipimpin oleh Dewan presidium tetap, yang terdiri dari 3 presidium. Presidium I diisi oleh Muhammad Iqbal, Presidium II oleh Miftahuddin Azhari, Presidium III Oleh Nauroh Nadzifah . Forum MTMTK kali ini berjalan sangat dinamis, banyak dari peserta forum yang mengusulkan gagasan-gagasan yang mereka tawarkan.<br />Rangkaian acara MTMTK diawali dengan Pembahasan AD ART dan GBHK Organisasi HMPTK. Dimana sidang pembahasan terbagi menjadi 3 komisi, komisi 1 membahas Anggaran dasar HMPTK, komisi 2 membahas Anggaran Rumah Tangga HMPTK, komisi 3 membahas Garis Besar Haluan Kegiatan HMPTK.<br /><br />Rangkaian acara selanjutnya yaitu penyampaian laporan Pertanggungjawaban HMPTK 2018 yang disampaikan oleh masing masing ketua Departemen HMPTK 2018.<br />Rangkaian acara terakhir MTMTK diisi dengan pendemisioneran HMPTK 2018, pemilihan DPH HMPTK 2019 dan penyerahan Jabatan Ketua HMPTK 2019 secara simbolis oleh Ketua HMPTK 2018 Naufal Mudrik Mezakki ke Ketua HMPTK 2019 terpilih Abdurrahman kholish Faizi.</p>', '', '5c99c77eb629c.jpeg', '2019-03-26');
+(57, ' PRESS RELEASE MANGROVE REPLANT #6 HMPTK 2019', '<p>Acara mangrove replant #6 telah dilaksanakan pada tanggal 6 April 2019 yang bertempat di Desa mangunharjo Mangkang Wetan, Semarang. Acara ini diikuti oleh peserta yang terdiri dari mahasiswa berbagai fakultas, delegasi, dan seluruh pengurus Himpunan Mahasiswa Profesi Teknik Kimia Universitas Negeri Semarang. Mangrove Replant ini merupakan acara tahunan HMPTK yang bertujuan untuk meningkatkan rasa kepedulian dan kesadaran tentang kondisi alam yang sangat memprihatinkan di daerah pesisir.</p><p>&nbsp;</p><p>Acara dimulai pukul 07.00 di lapangan E1 Fakultas Teknik Unnes, diawali dengan pembacaan doa, menyanyikan lagu Indonesia Raya, dilanjutkan laporan ketua panitia oleh saudari Rizkyah Fatikhatul Jannah, sambutan dari Ketua Umum HMPTK 2019 saudara Abdurrahman Kholish Faizi, dilanjutkan oleh Pembina HMPTK 2019 ibu Radenrara Dewi Artanti Putri, dan sambutan terakhir oleh bapak Wirawan Sumbodo selaku Wakil Dekan III Fakultas Teknik Universitas Negeri Semarang sekaligus membuka acara&nbsp;&nbsp;Mangrove replant #6 . Selanjutnya diadakan briefing peserta untuk persiapan perjalanan dan eksekusi kegiatan di tempat, lalu peserta melakukan perjalanan menggunakan truk menuju desa mangunharjo, Mangkang Wetan, Semarang. Setelah sampai peserta langsung berjalan berbaris menuju pesisir pantai dan dilanjutkan briefing penanaman mangrove oleh bapak Sururi selaku ketua petani mangrove di daerah mangunharjo. Selanjutnya peserta langsung melakukan penanaman mangrove sesuai arahan bapak Sururi. Acara berikutnya adalah foto bersama dan pemberian kenang-kenangan dari ketua panitia Mangrove Replant #6, saudara Rizkyah Fatikhatul Jannah kepada bapak Sururi selaku ketua petani dan pengelola mangrove di desa mangunharjo, Mangkang. Acara dilnjutkan perjalanan ke rumah bapak Sururi untuk bersih diri dan ishoma. Acara berikutnya foto bersama di depan rumah bapak Sururi dilanjutkan perjalanan pulang ke kampus Unnes. Tibalah di penghujung acara, selepas peserta sampai di lapangan E1 Fakultas Teknik Universitas Negeri Semarang, dilanjutkan acara penutupan oleh ketua panitia saudara Rizkyah Fatikhatul Jannah. Dengan diadakannya acara ini, diharapkan mampu meningkatkan rasa kepedulian kita terhadap lingkungan sekitar, menyadarkan kita untuk tidak membuang sampah sembarangan, serta lebih menjaga keseimbangan alam di lingkungan sekitar.</p>', 'Lain-Lain', '5cb9c62acf041.png', '2019-04-19'),
+(58, ' Acara mangrove replant #6 telah dilaksanakan pada tanggal 6 April 2019 yang bertempat di Desa mangu', '<p>Himpunan Mahasiswa Profesi Teknik Kimia mengadakan UPGRADING pada Sabtu-Minggu, 11-12 Maret 2017 di Gedong Songo,Bandungan. Kegiatan tersebut diikuti oleh seluruh fungsionaris HMPTK 2017. UPGRADING merupakan kegiatan rutin yang diadakan setiap tahun &nbsp;untuk mengakrabkan, meningkatkan kualitas, mutu &nbsp;serta SDM seluruh fungsionaris HMPTK 2017.<br /><br />Pada hari pertama, kegiatan diisi dengan penyampaian materi mengenai keskretariatan oleh Mira Melina, kebendaharaan oleh Miftakhul Hidayah, kepanitiaan oleh Dio Bagus Pengestu &nbsp;dan sponsorship oleh Lutfi Nahar. Penyampaian materi tersebut bertujuan agar setiap fungsionaris lebih mendalami dasar-dasar dalam organisasi dan kepanitiaan. Sehingga setiap kegiatan HMPTK berjalan dengan lancar. Pada hari kedua, kegiatan meliputi senam pagi,games.<br /><br />Kegiatan ini berlangsung &nbsp;lancar hingga penutupan dan mendapat antusiasme dari seluruh fungsionaris. &nbsp;Semoga setiap fungsionaris memperoleh manfaaat dari kegiatan tersebut.<br /><br />Salam YES WES CAN!</p>', 'HRD', '5cb9c69b7052a.gif', '2019-04-19'),
+(59, ' PRESS REALEASE Mahasiswa Teknik Kimia, Fakultas Teknik Universitas Negeri Semarang Berhasil Mendapa', '<p>Semarang (15/03/2019). Selamat dan sukses kepada Mahasiswa Teknik Kimia, Universitas Negeri Semarang yang telah melaksanakan Mawapres (Mahasiswa Berprestasi) di Fakultas Teknik Universitas Negeri Semarang. Selamat kepada Doni Saputra Yang telah mendapatkan Juara 2 Mawapres di Fakultas Teknik Universitas Negeri Semarang. Mahasiswa Teknik Kimia yang mengikuti Mawapres adalah:</p><ol><li>Doni Saputra (Teknik Kimia, 2016)</li><li>Hanifah (Teknik Kimia, 2016)</li></ol><p>Kegiatan Mawapres ini dilaksanakan pada tanggal 11-12 Maret 2019&nbsp; tepatnya di Dekanat lantai 3 Fakultas Teknik Universitas Negeri Semarang. Kegiatan ini dilaksanakan bertujuan sebagai Wadah Aspirasi Mahasiswa Berprestasi di Fakultas Teknik Universitas Negeri Semarang.</p><p>Keberhasilan kegiatan ini diraih berkat bantuan keluarga, kerabat, teman, dan seluruh dosen yang selalu mendukung dan mendoakan yang terbaik untuk kelancaran dan kesuksesan anak didiknya. Semoga keberhasilan ini bisa memotivasi Mahasiswa Teknik Kimia lainnya agar selalu semangat&nbsp; dan tidak berhenti berkarya.</p><p>&nbsp;</p><p>Salam Yes We Can !!!</p>', 'Lain-Lain', '5cb9ccab966d9.jpg', '2019-04-19');
 
 -- --------------------------------------------------------
 
@@ -167,7 +163,9 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
 (11, 'Event'),
 (12, 'CESA'),
 (13, 'ISO'),
-(14, 'SCC');
+(14, 'SCC'),
+(15, 'HRD'),
+(16, 'PRC');
 
 -- --------------------------------------------------------
 
@@ -193,7 +191,10 @@ INSERT INTO `pesan_pengirim` (`id_pesan`, `nama_pengirim`, `email_pengirim`, `is
 (31, '23', '23', '23', '2019/03/21.11:33:47pm'),
 (32, '11', '11', 'aaaa', '2019/03/24.08:47:03am'),
 (33, 'Aziz', 'aziz@gmail.com', 'Webnya sangat bagus', '2019/03/25.12:10:54pm'),
-(34, 'SAtrio', 'satriotol69@gmail.com', 'webnya bagus bangsat\r\n', '2019/03/26.01:07:37pm');
+(34, 'SAtrio', 'satriotol69@gmail.com', 'webnya bagus bangsat\r\n', '2019/03/26.01:07:37pm'),
+(35, 'Satrio', 'satriotol69@gmail.com', 'webnya sangat bagus bangsat, buatnya dimana ya ?', '2019/04/01.08:02:27pm'),
+(36, 'asep', 'cvvvvvvvvvvvvvvvvvvv', 'eeeeeeeeeeeeeeeeeeeeee', '2019/04/03.02:53:03pm'),
+(37, 'Hai', 'JEMbut', 'jembut', '2019/04/19.09:17:09pm');
 
 -- --------------------------------------------------------
 
@@ -216,7 +217,7 @@ INSERT INTO `slide` (`id_slide`, `main_judul`, `sub_judul`, `slide_gambar`) VALU
 (1, 'Selamat Datang', 'Himpunan Mahasiswa Profesi Teknik Kimia', '5c983b0a41eaf.jpg'),
 (3, '', 'PRESS RELEASE MTMTK 2018', '5c76acf338dd2.jpg'),
 (6, '1', '', '5c85fc638aac9.jpg'),
-(7, '', '', '5c85fc7754e68.jpg');
+(7, '', '', '5cb9d822023b9.jpg');
 
 -- --------------------------------------------------------
 
@@ -334,19 +335,19 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_admin` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `alumni`
 --
 ALTER TABLE `alumni`
-  MODIFY `id_alumni` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_alumni` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `chemengfair`
@@ -364,13 +365,13 @@ ALTER TABLE `departemen`
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `pesan_pengirim`
 --
 ALTER TABLE `pesan_pengirim`
-  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `slide`
