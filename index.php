@@ -18,9 +18,6 @@ $video = query("SELECT * FROM video");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-</head>
-
 <body id="page-top">
     <!-- Header -->
     <header>
@@ -105,6 +102,9 @@ $video = query("SELECT * FROM video");
         </div>
         <div class="main-page-container">
             <section class="posts-container">
+                <form class="form-cari" style="visibility: hidden;" action="get">
+                    <input class="form-control input-cari" type="text" placeholder="Cari">
+                </form>
                 <?php foreach ($index as $row) : ?>
                 <div class="posts-wrapper">
                     <article>
@@ -152,6 +152,11 @@ $video = query("SELECT * FROM video");
             </section>
             <aside>
                 <div class="aside-iframe-container">
+                    <form action="get">
+                        <input class="form-control input-cari" type="text" placeholder="Cari">
+                        <br>
+                    </form>
+                    <br>
                     <h2 class="video-hmptk">Video HMPTK</h2>
                     <br>
                     <?php foreach($video as $row):?>
@@ -193,18 +198,14 @@ $video = query("SELECT * FROM video");
                 }
             ?>
             <form id="contact" action="" method="post" enctype="multipart/form-data">
-                <div>
-                    <div>
-                        <input placeholder="Nama"type="text" name="nama_pengirim" id="nama_pengirim" required placeholder="Nama">
-                    </div>
-                    <div style="float: right">
-                        <input placeholder="Email" type="text" name="email_pengirim" id="email_pengirim" required>
-                    </div>
-                </div>
+                <input class="form-control" placeholder="Nama" type="text" name="nama_pengirim" id="nama_pengirim" required placeholder="Nama">
                 <br>
-                    <textarea  placeholder="Pesan" name="isi_pesan" id="isi_pesan"required></textarea>
+                <input class="form-control" placeholder="Email" type="text" name="email_pengirim" id="email_pengirim" required>
                 <br>
-                    <input type="hidden" name="tanggal_pengirim" required
+                <textarea class="form-control" style="width:60%; height: 20%; margin: auto;"  placeholder="Pesan" name="isi_pesan" id="isi_pesan"required></textarea>
+                <br>
+                <br>
+                    <input class="btn btn-primary-mb2" type="hidden" name="tanggal_pengirim" required
                     value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
                     <input type="submit" name="submit" value="Kirim">
             </form>
@@ -220,5 +221,4 @@ $video = query("SELECT * FROM video");
 <?php 
         include "footer.php";
         ?>
-
 </html>

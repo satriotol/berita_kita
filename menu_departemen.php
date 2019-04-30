@@ -27,7 +27,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
-                                <img src="images/departemen/GA.png">
+                                <img src="images/departemen/HRD.png">
                                 <h3>GA</h3>
                             </div>
                         </div>
