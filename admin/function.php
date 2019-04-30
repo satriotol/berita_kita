@@ -1,4 +1,5 @@
 <?php
+//$conn = mysqli_connect("sql307.epizy.com","epiz_23629284","hnAWWtVnHe1","epiz_23629284_berita_kita");
 $conn = mysqli_connect("localhost","root","","berita_kita");
 
 function query($query){
