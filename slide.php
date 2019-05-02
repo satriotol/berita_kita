@@ -50,7 +50,8 @@
         $output .= '
         <img src="upload/'.$row["slide_gambar"].'" alt="'.$row["main_judul"].'" />
         <div class="carousel-caption">
-            <h3>'.$row["main_judul"].'</h3>
+            <h2>'.$row["main_judul"].'</h2>
+            <h3>'.$row["sub_judul"].'</h3>
         </div>
         </div>
         ';
