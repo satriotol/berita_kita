@@ -72,6 +72,9 @@
 <body>
     <div class="container-baru">
         <div id="dynamic_slide_show" class="carousel slide" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+                <?php echo make_slide_indicators($connect); ?>
+            </ol> -->
             <div class="carousel-inner">
                 <?php echo make_slides($connect); ?>
             </div>
