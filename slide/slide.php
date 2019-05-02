@@ -70,6 +70,9 @@
 </head>
 
 <body>
+    <br>
+    <br>
+    <br>
     <div class="container-baru">
         <div id="dynamic_slide_show" class="carousel slide" data-ride="carousel">
             <!-- <ol class="carousel-indicators">

@@ -303,7 +303,7 @@ function query($query){
         return false;
         }
 
-        if($ukuranFile > 1000000){
+        if($ukuranFile > 10000000){
             echo "<script>
             alert('Ukuran gambar terlalu besar');
             </script>";
@@ -323,7 +323,7 @@ function query($query){
         $namaFileBaru = uniqid();
         $namaFileBaru .='.';
         $namaFileBaru .=$ekstensiGambar;
-        move_uploaded_file($tmpName,'../upload/slide_s2c/'.$namaFileBaru);
+        move_uploaded_file($tmpName,'../upload/'.$namaFileBaru);
 
         return $namaFileBaru;
     }

@@ -48,7 +48,7 @@
         $output .= '<div class="item">';
         }
         $output .= '
-        <img src="upload/slide_s2c'.$row["slide_gambar"].'" alt="'.$row["main_judul"].'" />
+        <img src="upload/'.$row["slide_gambar"].'" alt="'.$row["main_judul"].'" />
         <div class="carousel-caption">
             <h2>'.$row["main_judul"].'</h2>
             <h3>'.$row["sub_judul"].'</h3>
@@ -70,6 +70,9 @@
 </head>
 
 <body>
+    <br>
+    <br>
+    <br>
     <div class="container-baru">
         <div id="dynamic_slide_show" class="carousel slide" data-ride="carousel">
             <!-- <ol class="carousel-indicators">
