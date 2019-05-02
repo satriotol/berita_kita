@@ -18,7 +18,7 @@ $video = query("SELECT * FROM video");
     <!-- Header -->
     <header>
     <?php
-        include 'slide.php';
+        include 'slide/slide.php';
     ?>
     </header>
     <div class="container-wrapper">

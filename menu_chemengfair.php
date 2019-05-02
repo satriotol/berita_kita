@@ -51,7 +51,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
-							<h3>SCC</h3>
+							<h3>S2C</h3>
 						</div>
 					</div>
 				</a>

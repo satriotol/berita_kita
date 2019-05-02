@@ -1,11 +1,11 @@
 <?php
 include "layout/header.php";
 require 'function.php';
-$slide_gbr = query("SELECT * FROM slide");
+$slide_gbr = query("SELECT * FROM slide_s2c");
 ?>
 <link rel="stylesheet" href="css/admin.css">
 <div class="table-semua">
-<a class="tambah-berita-link" href="tambah_slide.php">Tambah Slide</a>
+<a class="tambah-berita-link" href="tambah_slide_s2c.php">Tambah Slide</a>
 <table border="1">
     <thead>
         <tr>

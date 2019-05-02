@@ -25,8 +25,8 @@ if(!isset($_SESSION["login"])){
         <ul>
             <a class="nav-link" href="index.php">Home</a>
             <a class="nav-link" href="list_berita.php">List Berita</a>
-            <!-- <a class="nav-link" href="list_kategori.php">List Kategori</a> -->
             <a class="nav-link" href="list_slide.php">List Slide</a>
+            <a class="nav-link" href="list_slide_s2c.php">List Slide S2C</a>
             <a class="nav-link" href="list_admin.php">List Admin</a>
             <a class="nav-link" href="list_alumni.php">List Alumni</a>
             <a class="nav-link" href="list_subberita.php">List Sub Berita</a>

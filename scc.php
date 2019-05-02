@@ -20,11 +20,14 @@ $('body').onload = function() {
     $(document).scrollBy(0,340);
 }
 </script>
+    <?php
+        include 'slide/slide_s2c.php';
+    ?>
 <body id="page-top">
     <!-- Header -->
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 class="main-page-title">SCC</h1>
+            <h1 class="main-page-title">S2C</h1>
         </div>
         <div class="main-page-container">
             <section class="posts-container">
