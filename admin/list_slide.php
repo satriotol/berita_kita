@@ -5,7 +5,7 @@ $slide_gbr = query("SELECT * FROM slide");
 ?>
 <link rel="stylesheet" href="css/admin.css">
 <div class="table-semua">
-<a class="tambah-berita-link" href="tambah_slide.php">Tambah Slide</a>
+<!-- <a href="tambah_slide.php">Tambah Slide</a> -->
 <table border="1">
     <thead>
         <tr>
@@ -26,7 +26,7 @@ $slide_gbr = query("SELECT * FROM slide");
             <td><img src="../upload/<?=$row["slide_gambar"]; ?>" width="50"></td>
             <td>
                 <a href="edit_slide.php?id=<?=$row["id_slide"];?>">Edit</a>
-                <a href="delete/delete_slide.php?id=<?=$row["id_slide"];?>"onclick="return confirm('yakin?');">Delete</a>
+                <!-- <a href="delete/delete_slide.php?id=<?=$row["id_slide"];?>"onclick="return confirm('yakin?');">Delete</a> -->
             </td>
         </tr>
     <?php $i++ ?>

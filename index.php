@@ -1,6 +1,10 @@
 <?php
 require 'admin/function.php';
-include 'header.php';   
+include 'header.php';
+$slide_gbr = query("SELECT * FROM slide")[0];
+$slide_gbr2 = query("SELECT * FROM slide")[1];
+$slide_gbr3 = query("SELECT * FROM slide")[2];
+$slide_gbr4 = query("SELECT * FROM slide")[3];
 $jumlahDataPerHalaman = 5;
 $jumlahData = count(query("SELECT * FROM berita"));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
@@ -17,9 +21,80 @@ $video = query("SELECT * FROM video");
 <body id="page-top">
     <!-- Header -->
     <header>
-    <?php
-        include 'slide/slide.php';
-    ?>
+        <div class="container-fluid">
+            <div class="slider-container">
+                <div class="owl-slider owl-carousel">
+                    <div class="item">
+                        <div class="owl-slider-item">
+                            <img src="upload/<?=$slide_gbr["slide_gambar"]; ?>" class="img-responsive"
+                            alt="portfolio">
+                            <div class="intro-text">
+                                <input type="hidden" name="id_slide" value="<?=$slide_gbr["id_slide"]; ?>">
+                                <div class="intro-lead-in">
+                                    <label for="main_judul">
+                                        <?=$slide_gbr["main_judul"]; ?></label>
+                                </div>
+                                <div class="intro-heading">
+                                    <label for="sub_judul">
+                                        <?=$slide_gbr["sub_judul"]; ?></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="owl-slider-item">
+                            <img src="upload/<?=$slide_gbr2["slide_gambar"]; ?>" class="img-responsive"
+                            alt="portfolio">
+                            <div class="intro-text">
+                                <input type="hidden" name="id_slide" value="<?= $slide_gbr2["id_slide"]; ?>">
+                                <div class="intro-lead-in">
+                                    <label for="main_judul">
+                                        <?=$slide_gbr2["main_judul"]; ?></label>
+                                </div>
+                                <div class="intro-heading">
+                                    <label for="sub_judul">
+                                        <?=$slide_gbr2["sub_judul"]; ?></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="owl-slider-item">
+                            <img src="upload/<?= $slide_gbr3["slide_gambar"]; ?>" class="img-responsive"
+                            alt="portfolio">
+                            <div class="intro-text">
+                                <input type="hidden" name="id_slide" value="<?= $slide_gbr3["id_slide"]; ?>">
+                                <div class="intro-lead-in">
+                                    <label for="main_judul">
+                                        <?=$slide_gbr3["main_judul"]; ?></label>
+                                </div>
+                                <div class="intro-heading">
+                                    <label for="sub_judul">
+                                        <?=$slide_gbr3["sub_judul"]; ?></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="owl-slider-item">
+                            <img src="upload/<?= $slide_gbr4["slide_gambar"]; ?>" class="img-responsive"
+                            alt="portfolio">
+                            <div class="intro-text">
+                                <input type="hidden" name="id_slide" value="<?= $slide_gbr4["id_slide"]; ?>">
+                                <div class="intro-lead-in">
+                                    <label for="main_judul">
+                                        <?=$slide_gbr4["main_judul"]; ?></label>
+                                </div>
+                                <div class="intro-heading">
+                                    <label for="sub_judul">
+                                        <?=$slide_gbr4["sub_judul"]; ?></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="container-wrapper">
         <div class="main-page-header">
@@ -27,7 +102,7 @@ $video = query("SELECT * FROM video");
         </div>
         <div class="main-page-container">
             <section class="posts-container">
-                <form class="form-cari" style="visibility: hidden;" action="get">
+                <form class="form-cari" style="display: none;" action="get">
                     <input class="form-control input-cari" type="text" placeholder="Cari">
                 </form>
                 <?php foreach ($index as $row) : ?>
@@ -142,7 +217,6 @@ $video = query("SELECT * FROM video");
     </p>
     <!-- footer -->
 </body>
-
 <?php 
         include "footer.php";
         ?>

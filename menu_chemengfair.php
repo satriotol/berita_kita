@@ -7,7 +7,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 <!DOCTYPE html>
 <html>
 <body id="page-top">
-	<section id="about" class="light-bg">
+	<section id="about" class="light-bg  menu">
 		<div class="row">
 			<!-- about module -->
 			<div class="col-md-3 text-center">
@@ -51,7 +51,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
-							<h3>S2C</h3>
+							<h3>SCC</h3>
 						</div>
 					</div>
 				</a>

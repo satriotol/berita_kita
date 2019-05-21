@@ -39,7 +39,14 @@
 
 	.post-image-container {
 		height: 200px;
+		display: flex;
+		justify-content: center;
 		width: auto;
+	}
+
+	.post-image-container img {
+		align-content: center;
+		margin: auto;
 	}
 
 	div.image-title-message {
@@ -59,11 +66,12 @@
 
 	h3.post-title {
 		width: 100%;
-		font-size: 10pt;
+		font-size: 15t;
 	}
 
 	.form-cari {
-		visibility: visible !important;
+		width: 50%;
+		display: flex !important;
 	}
 	
 	aside {
