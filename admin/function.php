@@ -466,4 +466,12 @@ function query($query){
         mysqli_query($conn,"DELETE FROM video WHERE id_video = $id");
         return mysqli_affected_rows($conn);
     }
+    function cari ($keyword){
+        $query ="SELECT * FROM berita
+            WHERE 
+                judul LIKE '%$keyword%' OR
+                kategori LIKE '%$keyword%' 
+            ";
+        return query($query);
+    }
 ?>
