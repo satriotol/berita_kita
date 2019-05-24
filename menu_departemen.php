@@ -20,7 +20,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
 
 <!-- Pake HTML --> 
 <body>
-    <section id="about" class="light-bg">
+    <section id="about" class="light-bg menu">
         <div class="row">
             <div class="col-md-3 text-center">
                 <a href="#" target="blank_">

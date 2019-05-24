@@ -5,6 +5,7 @@
 		<div class="footer-address">
 			<p>Gd. PKM FT-Universitas Negeri Semarang, Sekaran, GunungPati</p>
 			<p>himatekkimunnes@gmail.com</p>
+			<p>0812-1635-8131 - Septian</p>
 		</div>
 		<div class="footer-socmed-copyright">
 			<div class="footer-socmed-container">
@@ -18,14 +19,14 @@
 			</div>
 		</div>
 		<p class="copyright-title">MADE BY <a target="_blank"
-				href="instagram.com/profile/krotidesian.id">KROTIDESIAN</a></p>
+			href="instagram.com/profile/krotidesian.id">KROTIDESIAN</a></p>
 	</div>
 </footer>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/cbpAnimatedHeader.js"></script>

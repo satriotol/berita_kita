@@ -5,11 +5,11 @@ include 'header.php';
 <html lang="en">
 
 <body id="page-top">
-	<section id="about" class="light-bg">
+	<section id="about" class="light-bg menu">
 		<div class="row">
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="">
+				<a href="" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about" href="#">
 							<i class="fa fa-briefcase color1 ot-circle"></i>
@@ -21,7 +21,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="">
+				<a href="" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-photo color2 ot-circle"></i>
@@ -33,7 +33,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-camera-retro color3 ot-circle"></i>
@@ -45,7 +45,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -57,7 +57,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -69,7 +69,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -81,7 +81,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -93,7 +93,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="http://" target="_blank">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>

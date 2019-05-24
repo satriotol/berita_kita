@@ -20,11 +20,6 @@ $('body').onload = function() {
     $(document).scrollBy(0,340);
 }
 </script>
-<header>
-    <?php
-        include 'slide.php';
-    ?>
-</header>
 <body id="page-top">
     <!-- Header -->
     <div class="container-wrapper">

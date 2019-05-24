@@ -14,12 +14,6 @@ $video = query("SELECT * FROM video");
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-$('body').onload = function() {
-    window.scrollBy(0,340);
-    $(document).scrollBy(0,340);
-}
-</script>
 <body id="page-top">
     <!-- Header -->
     <div class="container-wrapper">

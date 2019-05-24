@@ -95,8 +95,8 @@ li.dropdown {
 .main-page-header {
 	margin: auto;
 	width: 100%;
-	margin-top: 10%;
-	margin-bottom: 7.5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	height: auto;
 	-webkit-animation: video-label 1.25s .5s ease-out;
 	animation: video-label 1.25s .5s ease-out;
@@ -498,7 +498,8 @@ aside div.aside-iframe-container iframe {
 
 .contact-us-wrapper {
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 105, 143, 0.75)), to(rgb(2, 65, 90))),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
-	background: linear-gradient(rgba(10, 105, 143, 0.75), rgb(2, 65, 90)),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
+	background: linear-gradient(rgba(9, 166, 228, 0.75), rgb(2, 65, 90)),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
+	color: #1295C9;
 	height: 500px;
 	width: 100%;
 }
@@ -601,7 +602,7 @@ aside div.aside-iframe-container iframe {
 	margin: auto;
 	width: 100%;
 	height: auto;
-	text-align: center;
+	justify-content: center;
 }
 
 .footer-socmed-copyright {
@@ -700,7 +701,7 @@ article.post-wrapper {
 }
 
 h3.post-title {
-	font-size: 15pt;
+	font-size: 17pt;
 	margin-bottom: 5px;
 }
 
@@ -787,4 +788,8 @@ a:hover {
 .mz-module-about:hover img {
 	-webkit-filter: grayscale(0);
 	        filter: grayscale(0);
+}
+
+.menu {
+	background: linear-gradient(rgba(248, 248, 248, 0.9), rgb(255, 255, 255,0.9)) ,url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
 }
