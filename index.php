@@ -78,7 +78,8 @@ $video = query("SELECT * FROM video");
             <aside>
                 <div class="aside-iframe-container">
                     <form action="get">
-                        <input class="form-control input-cari" type="text" placeholder="Cari">
+                        <input class="form-control input-cari" type="text" placeholder="Masukkan Kata Kunci">
+                        <input type="button" class="btn btn-cari" value="Cari">
                         <br>
                     </form>
                     <br>
