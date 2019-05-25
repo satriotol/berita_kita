@@ -6,7 +6,7 @@ $jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'S2C' "));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = 'S2C'");
+$index = query("SELECT * FROM berita WHERE kategori = 'S2C' ORDER BY id DESC");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
 
