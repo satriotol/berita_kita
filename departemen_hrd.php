@@ -22,14 +22,27 @@ $('body').onload = function() {
 </script>
 <header>
     <?php
-        include 'slide.php';
+        include 'slide/slide.php';
     ?>
 </header>
 <body id="page-top">
     <!-- Header -->
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 class="main-page-title">HRD</h1>
+            <h1 id="departemen-label" class="main-page-title">HRD</h1>
+        </div>
+        <div class="pendahuluan">
+            <div class="pendahuluan-img">
+                <img width="100" src="images/departemen/hrd.png" alt="">
+            </div>
+            <div class="pendahuluan-article">
+                <h5 class="pendahuluan-article-title">Human Resource Development</h5>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas iste, sunt eum nulla amet accusantium dolore, debitis placeat tempora impedit pariatur nostrum maxime recusandae est dolorem veniam repellendus eligendi?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vitae eos molestias nihil voluptatibus magni ea excepturi recusandae debitis ipsa nesciunt necessitatibus labore modi quidem, molestiae odio, quos animi quasi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt? Qui omnis nihil labore reprehenderit nam itaque nostrum, numquam totam maxime impedit quae laboriosam officia dolores autem fugiat veniam minima.  
+                </div>  
+            </div>
         </div>
         <div class="main-page-container">
             <section class="posts-container">
