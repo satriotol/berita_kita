@@ -10,6 +10,9 @@ $index = query("SELECT kategori.*,berita.* FROM berita LEFT JOIN kategori on ber
 ORDER BY berita.id DESC LIMIT $awalData,$jumlahDataPerHalaman");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
+if (isset($_POST["cari"])){
+    $index = cari ($_POST["keyword"]);
+}
 
 ?>
 <!DOCTYPE html>
@@ -77,9 +80,9 @@ $video = query("SELECT * FROM video");
             </section>
             <aside>
                 <div class="aside-iframe-container">
-                    <form action="get">
-                        <input class="form-control input-cari" type="text" placeholder="Masukkan Kata Kunci">
-                        <input type="button" class="btn btn-cari" value="Cari">
+                <form action="" method="post">
+                        <input class="form-control input-cari" name="keyword" type="text" placeholder="Masukkan Kata Kunci" autocomplete="off">
+                        <button type="submit" class="btn btn-cari" name="cari">Cari</button>
                         <br>
                     </form>
                     <br>
