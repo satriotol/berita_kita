@@ -59,7 +59,7 @@
                         <a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
                         <a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
                         <a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id" target="_blank">Jurusan</a>
-                        <a class="nav-link" style="color: white" href="index.php#contact-us">Kontak</a>
+                        <a class="nav-link" style="color: white" href="kontak_kami.php">Kontak</a>
                     </div>
                 </li>
             </ul>
