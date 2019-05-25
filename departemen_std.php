@@ -2,11 +2,11 @@
 require 'admin/function.php';
 include 'header.php';
 $jumlahDataPerHalaman = 5;
-$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'PRC'"));
+$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'STD'"));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = 'PRC'  ORDER BY id DESC ");
+$index = query("SELECT * FROM berita WHERE kategori = 'STD'  ORDER BY id DESC ");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
 
@@ -17,19 +17,19 @@ $video = query("SELECT * FROM video");
     <!-- Header -->
     <header>
     <?php
-        include 'slide/slide_prc.php';
+        include 'slide/slide_std.php';
     ?>
     </header>
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 class="main-page-title">PRC</h1>
+            <h1 class="main-page-title">STD</h1>
         </div>
         <div class="pendahuluan">
             <div class="pendahuluan-img">
-                <img width="100" src="images/departemen/PRC.png" alt="">
+                <img width="100" src="images/departemen/STD.png" alt="">
             </div>
             <div class="pendahuluan-article">
-                <h5 class="pendahuluan-article-title">PRC</h5>
+                <h5 class="pendahuluan-article-title">STD</h5>
                 <div style="text-align:justify;">
                 Smart student competition (S2C)  merupakan olimpiade matematika dan fisika tingkat nasional yang diperuntukan untuk seluruh siwa-siswi SMA/MA dan SMK sederajat yang ada di lingkup nasional, S2C terdiri dari tiga babak yaitu babak penyisihan berupa pengerjaan soal pilihan ganda, babak semifinal berupa pengerjaan soal essay, dan babak final berupa pertanyaan studi kasus. 
                 S2C sendiri bertujuan untuk mengembangkan potensi intelektual siswa-siswi di indonesia dalam bidang matematika dan fisika, dan juga meningkatkan motivasi berprestasi siswa-siswi di Indonesia dalam dalam bidang matematika dan fisika. 

@@ -23,7 +23,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
     <section id="about" class="light-bg">
         <div class="row">
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_ga.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -59,7 +59,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="departemen_SED" target="blank_">
+                <a href="departemen_sed.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -71,7 +71,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="departemen_RnT" target="blank_">
+                <a href="departemen_rnt.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -83,7 +83,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_std.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -95,7 +95,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_socdev.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
@@ -107,7 +107,7 @@ $index = query('SELECT * FROM departemen WHERE id_dept>0');
                 </a>
             </div>
             <div class="col-md-3 text-center">
-                <a href="#" target="blank_">
+                <a href="departemen_techno.php" target="blank_">
                     <div class="mz-module">
                         <div>
                             <div class="mz-module-about">
