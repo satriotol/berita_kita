@@ -17,7 +17,7 @@ $video = query("SELECT * FROM video");
     <!-- Header -->
     <header>
     <?php
-        include 'slide/slide_cesa.php';
+        include 'slide/slide_ception.php';
     ?>
     </header>
     <div class="container-wrapper">
@@ -31,9 +31,12 @@ $video = query("SELECT * FROM video");
             <div class="pendahuluan-article">
                 <h5 class="pendahuluan-article-title">CEPTION</h5>
                 <div style="text-align:justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas iste, sunt eum nulla amet accusantium dolore, debitis placeat tempora impedit pariatur nostrum maxime recusandae est dolorem veniam repellendus eligendi?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vitae eos molestias nihil voluptatibus magni ea excepturi recusandae debitis ipsa nesciunt necessitatibus labore modi quidem, molestiae odio, quos animi quasi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt? Qui omnis nihil labore reprehenderit nam itaque nostrum, numquam totam maxime impedit quae laboriosam officia dolores autem fugiat veniam minima.  
+                Chemical Engineering Paper Competition [CEPTION] 2019 merupakan salah satu program kerja 
+                HMPTK 2019 yang bergerak dalam bidang riset dan teknologi yang berupa Lomba Karya Tulis Ilmiah tingkat nasional 
+                dan bertujuan untuk meningkatkan ketrampilan menulis bagi para mahasiswa di tingkat perguruan tinggi. CEPTION tidak 
+                hanya berfokus dalam bidang riset saja, sebagai bentuk inovasi, prestasi dan kontribusi peserta CEPTION akan mengikuti 
+                salah satu serangkaian acara dari CEPTION yang bergerak dalam bidang pengabdian yaitu lensa sosial dimana peserta akan 
+                melakukan kegiatan belajar dan mengajar dengan anak-anak panti asuhan.
                 </div>  
             </div>
         </div>

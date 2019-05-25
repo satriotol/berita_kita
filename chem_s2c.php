@@ -2,44 +2,37 @@
 require 'admin/function.php';
 include 'header.php';
 $jumlahDataPerHalaman = 5;
-$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'HRD'"));
+$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'S2C' "));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = 'HRD'  ORDER BY id DESC ");
+$index = query("SELECT * FROM berita WHERE kategori = 'S2C'");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-<script>
-$('body').onload = function() {
-    window.scrollBy(0,340);
-    $(document).scrollBy(0,340);
-}
-</script>
-<header>
-    <?php
-        include 'slide/slide.php';
-    ?>
-</header>
 <body id="page-top">
     <!-- Header -->
+    <header>
+    <?php
+        include 'slide/slide_s2c.php';
+    ?>
+    </header>
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 id="departemen-label" class="main-page-title">HRD</h1>
+            <h1 class="main-page-title">S2C</h1>
         </div>
         <div class="pendahuluan">
             <div class="pendahuluan-img">
-                <img width="100" src="images/departemen/HRD.png" alt="">
+                <!-- <img width="100" src="images/departemen/HRD.png" alt=""> -->
             </div>
             <div class="pendahuluan-article">
-                <h5 class="pendahuluan-article-title">Human Resource Development</h5>
+                <h5 class="pendahuluan-article-title">S2C</h5>
                 <div style="text-align:justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas iste, sunt eum nulla amet accusantium dolore, debitis placeat tempora impedit pariatur nostrum maxime recusandae est dolorem veniam repellendus eligendi?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vitae eos molestias nihil voluptatibus magni ea excepturi recusandae debitis ipsa nesciunt necessitatibus labore modi quidem, molestiae odio, quos animi quasi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt? Qui omnis nihil labore reprehenderit nam itaque nostrum, numquam totam maxime impedit quae laboriosam officia dolores autem fugiat veniam minima.  
+                Smart student competition (S2C)  merupakan olimpiade matematika dan fisika tingkat nasional yang diperuntukan untuk seluruh siwa-siswi SMA/MA dan SMK sederajat yang ada di lingkup nasional, S2C terdiri dari tiga babak yaitu babak penyisihan berupa pengerjaan soal pilihan ganda, babak semifinal berupa pengerjaan soal essay, dan babak final berupa pertanyaan studi kasus. 
+                S2C sendiri bertujuan untuk mengembangkan potensi intelektual siswa-siswi di indonesia dalam bidang matematika dan fisika, dan juga meningkatkan motivasi berprestasi siswa-siswi di Indonesia dalam dalam bidang matematika dan fisika. 
                 </div>  
             </div>
         </div>
@@ -116,51 +109,15 @@ $('body').onload = function() {
         </div>
     </div>
 
-    <!-- <div class="contact-us-wrapper" id="contact-us">
-        <div class="contact-us-container1">
-            <h1 style="color: white">Hubungi Kami</h1>
-            <?php
-                if(isset($_POST["submit"])){
-                    // cek apakah data berhasil ditambahkan atau tidak
-                    if(tambah_pesan($_POST)>0){
-                        echo "
-                        <script>
-                            alert ('pesan berhasil ditambahkan!');
-                            document.location.href ='index.php'
-                        </script>
-                        ";
-                    }
-                }
-            ?>
-            <form id="contact" action="" method="post" enctype="multipart/form-data">
-                <div>
-                    <div>
-                        <label for="">Nama : </label>
-                        <input type="text" name="nama_pengirim" id="nama_pengirim" cols="50" required>
-                    </div>
-                    <div style="float: right">
-                        <label for="">Email : </label>
-                        <input type="text" name="email_pengirim" id="email_pengirim" cols="50" required>
-                    </div>
-                </div>
-                    <label for="">Pesan : </label>
-                <br>
-                    <textarea name="isi_pesan" id="isi_pesan" cols="60" rows="10" required></textarea>
-                <br>
-                    <input type="hidden" name="tanggal_pengirim" required
-                    value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
-                    <input type="submit" name="submit" value="Kirim">
-            </form>
-        </div>
-    </div> -->
+
     </section>
     <p id="back-top">
         <a href="#top"><i class="fa fa-angle-up"></i></a>
     </p>
     <!-- footer -->
-        <?php 
-        include "footer.php";
-        ?>
 </body>
 
+<?php 
+        include "footer.php";
+?>
 </html>

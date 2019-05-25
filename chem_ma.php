@@ -2,11 +2,11 @@
 require 'admin/function.php';
 include 'header.php';
 $jumlahDataPerHalaman = 5;
-$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'MACHEMENG AWARDS' "));
+$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'CHEMENG AWARD' "));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = 'MACHEMENG AWARDS'");
+$index = query("SELECT * FROM berita WHERE kategori = 'CHEMENG AWARD'");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
 
@@ -17,23 +17,23 @@ $video = query("SELECT * FROM video");
     <!-- Header -->
     <header>
     <?php
-        include 'slide/slide_cesa.php';
+        include 'slide/slide_ma.php';
     ?>
     </header>
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 class="main-page-title">MACHEMENG AWARDS</h1>
+            <h1 class="main-page-title">CHEMENG AWARD</h1>
         </div>
         <div class="pendahuluan">
             <div class="pendahuluan-img">
                 <!-- <img width="100" src="images/departemen/HRD.png" alt=""> -->
             </div>
             <div class="pendahuluan-article">
-                <h5 class="pendahuluan-article-title">MACHEMENG AWARDS</h5>
+                <h5 class="pendahuluan-article-title">CHEMENG AWARD</h5>
                 <div style="text-align:justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas iste, sunt eum nulla amet accusantium dolore, debitis placeat tempora impedit pariatur nostrum maxime recusandae est dolorem veniam repellendus eligendi?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vitae eos molestias nihil voluptatibus magni ea excepturi recusandae debitis ipsa nesciunt necessitatibus labore modi quidem, molestiae odio, quos animi quasi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt? Qui omnis nihil labore reprehenderit nam itaque nostrum, numquam totam maxime impedit quae laboriosam officia dolores autem fugiat veniam minima.  
+                Chemical Engineering Award (Chemeng Award) merupakan salah satu program kerja HMPTK 2019 sebagai acara hiburan berupa 
+                penampilan mahasiswa teknik kimia, pemberian penghargaan terhadap mahasiswa yang berprestasi dibidang akademik maupun non akademik serta penampilan guest star. 
+                Chemical Engineering Award (Chemeng Award) diselenggarakan setiap tahun sebagai penutupan serangkaian acara Chemical Engineering Fair yang berfungsi untuk mempererat hubungan antara civitas akademika teknik kimia universitas negeri semarang
                 </div>  
             </div>
         </div>

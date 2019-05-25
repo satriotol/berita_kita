@@ -3,7 +3,7 @@
     $connect = mysqli_connect("localhost","root","","berita_kita");
     function make_query($connect)
     {
-     $query = "SELECT * FROM slide ORDER BY id_slide ASC";
+        $query = "SELECT * FROM slide_ma ORDER BY id_slide ASC";
         $result = mysqli_query($connect, $query);
         return $result;
     }

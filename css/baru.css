@@ -1,4 +1,6 @@
 /* lihat berita rusak gara gara <li> */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+
 nav {
 	height: 80px !important;
 	width: 100%;
@@ -95,8 +97,8 @@ li.dropdown {
 .main-page-header {
 	margin: auto;
 	width: 100%;
-	margin-top: 10%;
-	margin-bottom: 7.5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	height: auto;
 	-webkit-animation: video-label 1.25s .5s ease-out;
 	animation: video-label 1.25s .5s ease-out;
@@ -232,6 +234,10 @@ div.main-page-slider a:hover {
 	height: auto;
 }
 
+.posts-container form {
+	display: none !important;
+}
+
 .posts-container .posts-wrapper {
 	margin: 0;
 }
@@ -278,7 +284,7 @@ article {
 }
 
 .post-image-container {
-	width: 250px;
+	width: 200px;
 	height: 200px;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -286,6 +292,8 @@ article {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	margin: auto;
+	object-fit: cover;
 }
 
 .post-image-container img {
@@ -558,12 +566,13 @@ aside div.aside-iframe-container iframe {
 
 .contact-us-container1 form input[type=text] {
 	margin: auto;
-	width: 60%;
+	width: 75%;
 }
 
-.contact-us-container1 form input[type=textarea] {
+.contact-us-container1 form textarea {
 	margin: auto;
-	width: 60%;
+	width: 75%;
+	height: 20%;
 } 
 
 .contact-us-container1 form label {
@@ -763,10 +772,20 @@ a:hover {
 	text-decoration: none;
 }
 
+#about {
+	padding: 2.5%;
+	background: linear-gradient(rgba(255, 255, 255, 0.90), rgb(255, 255, 255, 0.90)),url(../images/texture.jpg) repeat 0 0 / 12.5% auto !important;
+}
+
 .mz-module-about {
 	width: 100%;
 	background-size: 100%;
 	background-position: center center;
+}
+
+.mz-module-about img {
+	width: 200px;
+	height: auto;
 }
 
 /* .mz-module-about:hover {
@@ -790,5 +809,58 @@ a:hover {
 }
 .btn-cari{
 	background-color: rgb(18, 129, 173);
+	color: white;
+}
+
+.departemen-label {
+	margin-bottom: 2.5% !important;
+	margin-top: 2.5% !important;
+}
+
+/* CSS untuk pendahuluan */
+.pendahuluan {
+	display: flex;
+	width: 75%;
+	height: auto;
+	padding: 2.5%;
+	margin: auto;
+	background-color: rgb(253, 253, 253);
+	margin-bottom: 100px;
+	border: rgb(233, 233, 233) solid 1px;
+	box-shadow: #00000025 0px 5px 10px;
+}
+.pendahuluan-article {
+	margin-left: 2.5%;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	width: 100%;
+	height: auto;
+}
+.pendahuluan-article-title {
+	font-size: large;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: auto;
+}
+
+/* CSS untuk kontak kami */
+.gmap-wrapper {
+	padding: 2.5%;
+	margin: auto;
+	border: #00000025 1px solid;
+	box-shadow: #00000015 0px 5px 5px;
+	width: 75%;
+}
+
+#gmap-canvas {
+	margin: auto;
+	width: 100% !important;
+	height: 200px;
+}
+
+.kontak-kami-wrap {
+	width: 75%;
+	margin: auto;
+	padding: 1%;
+	background: #1295C9;
 	color: white;
 }

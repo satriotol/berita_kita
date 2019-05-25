@@ -23,7 +23,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="iso.php">
+				<a href="chem_iso.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-photo color2 ot-circle"></i>
@@ -35,7 +35,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="cesa.php">
+				<a href="chem_cesa.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-camera-retro color3 ot-circle"></i>
@@ -47,7 +47,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="scc.php">
+				<a href="chem_s2c.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -59,7 +59,7 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="">
+				<a href="chem_ception.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -71,11 +71,11 @@ $index = query ("SELECT * FROM chemengfair WHERE id_chemeng>0");
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="">
+				<a href="chem_ma.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
-							<h3>MACHEMENG AWARDS</h3>
+							<h3>CHEMENG AWARDS</h3>
 						</div>
 					</div>
 				</a>
