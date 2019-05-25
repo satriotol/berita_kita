@@ -66,7 +66,7 @@ $result1 = mysqli_query($conn,$query);
                         <option value="SEMINAR NASIONAL">SEMINAR NASIONAL</option>
                         <option value="ISO">ISO</option>
                         <option value="CESA">CESA</option>
-                        <option value="SCC">SCC</option>
+                        <option value="S2C">S2C</option>
                         <option value="CEPTION">CEPTION</option>
                         <option value="MACHEMENG AWARDS">MACHEMENG AWARDS</option>
                     </optgroup>
