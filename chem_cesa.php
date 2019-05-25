@@ -2,11 +2,11 @@
 require 'admin/function.php';
 include 'header.php';
 $jumlahDataPerHalaman = 5;
-$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'SEMINAR NASIONAL' "));
+$jumlahData = count(query("SELECT * FROM berita WHERE kategori = 'CESA' "));
 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
 $awalData = ($jumlahDataPerHalaman * $halamanAktif) -$jumlahDataPerHalaman;
-$index = query("SELECT * FROM berita WHERE kategori = 'SEMINAR NASIONAL'");
+$index = query("SELECT * FROM berita WHERE kategori = 'CESA'");
 $subberita = query("SELECT * FROM subberita ORDER BY subberita.id_subberita DESC");
 $video = query("SELECT * FROM video");
 
@@ -22,14 +22,14 @@ $video = query("SELECT * FROM video");
     </header>
     <div class="container-wrapper">
         <div class="main-page-header">
-            <h1 class="main-page-title">Seminar Nasional</h1>
+            <h1 class="main-page-title">CESA</h1>
         </div>
         <div class="pendahuluan">
             <div class="pendahuluan-img">
                 <!-- <img width="100" src="images/departemen/HRD.png" alt=""> -->
             </div>
             <div class="pendahuluan-article">
-                <h5 class="pendahuluan-article-title">Seminar Nasional</h5>
+                <h5 class="pendahuluan-article-title">CESA</h5>
                 <div style="text-align:justify;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas iste, sunt eum nulla amet accusantium dolore, debitis placeat tempora impedit pariatur nostrum maxime recusandae est dolorem veniam repellendus eligendi?
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vitae eos molestias nihil voluptatibus magni ea excepturi recusandae debitis ipsa nesciunt necessitatibus labore modi quidem, molestiae odio, quos animi quasi.
