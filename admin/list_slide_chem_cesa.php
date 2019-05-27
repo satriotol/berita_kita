@@ -1,7 +1,7 @@
 <?php
 include "layout/header.php";
 require 'function.php';
-$slide_gbr = query("SELECT * FROM slide_s2c");
+$slide_gbr = query("SELECT * FROM slide_cesa");
 ?>
 <!DOCTYPE HTML>
 
@@ -14,7 +14,7 @@ $slide_gbr = query("SELECT * FROM slide_s2c");
     include 'slide_chemengfair.php';
     ?>
     <div class="table-semua">
-        <a class="tambah-berita-link" href="tambah_slide_s2c.php">Tambah Slide</a>
+        <a class="tambah-berita-link" href="tambah/tambah_slide_chem_cesa.php">Tambah Slide</a>
         <table border="1">
             <thead>
                 <tr>
@@ -34,7 +34,7 @@ $slide_gbr = query("SELECT * FROM slide_s2c");
                     <td><?=$row["sub_judul"];?></td>
                     <td><img src="../upload/<?=$row["slide_gambar"]; ?>" width="50"></td>
                     <td>
-                        <a href="delete/delete_slide_s2c.php?id=<?=$row["id_slide"];?>"
+                        <a href="delete/delete_slide_chem_cesa.php?id=<?=$row["id_slide"];?>"
                             onclick="return confirm('yakin?');">Delete</a>
                     </td>
                 </tr>
