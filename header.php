@@ -45,7 +45,7 @@
                     <a class="nav-link" style="color: white" href="index.php">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link" style="color: white" href="article.php">Article</a>
+                    <a class="nav-link" style="color: white" href="menu_article.php">Article</a>
                 </li>
                 <li>
                     <a class="nav-link" style="color: white" href="menu_chemengfair.php">Chemengfair</a>
