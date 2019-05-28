@@ -9,16 +9,23 @@
 
     <h2>Article Slide</h2>
     <div class="button_all">
-        <button class="button">PRESS RELEASE</button>
-        <button class="button">EVENT</button>
-        <button class="button">CHEMIST</button>
-        <button class="button">ADVOKASI</button>
-        <button class="button">OPREC</button>
-        <button class="button">MATERI</button>
-        <button class="button">CERC</button>
-        <button class="button">STORE</button>
+        <a href="" class="button">PRESS RELEASE</a>
+        <a href="" class="button">EVENT</a>
+        <a href="" class="button">CHEMIST</a>
+        <a href="" class="button">ADVOKASI</a>
+        <a href="" class="button">OPREC</a>
+        <a href="" class="button">MATERI</a>
+        <a href="" class="button">CERC</a>
+        <a href="" class="button">STORE</a>
     </div>
 
 </body>
 
 </html>
+<script>
+    $(".button").each(function() {
+        if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+            $(this).addClass('active');
+        }
+    });
+</script>

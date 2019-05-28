@@ -737,6 +737,574 @@ function query($query){
         mysqli_query($conn,"DELETE FROM slide_ma WHERE id_slide = $id_slide");
         return mysqli_affected_rows($conn);
     }
+//slide_ga
+    function tambah_slide_gambar_ga($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_ga();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_ga VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_ga(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_ga($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_ga WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_hrd
+    function tambah_slide_gambar_hrd($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_hrd();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_hrd VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_hrd(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_hrd($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_hrd WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_prc
+    function tambah_slide_gambar_prc($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_prc();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_prc VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_prc(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_prc($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_prc WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_sed
+    function tambah_slide_gambar_sed($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_sed();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_sed VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_sed(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_sed($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_sed WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_sed
+    function tambah_slide_gambar_rnt($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_rnt();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_rnt VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_rnt(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_rnt($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_rnt WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_std
+    function tambah_slide_gambar_std($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_std();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_std VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_std(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_std($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_std WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_socdev
+    function tambah_slide_gambar_socdev($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_socdev();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_socdev VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_socdev(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_socdev($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_socdev WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_techno
+    function tambah_slide_gambar_techno($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_techno();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_techno VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_techno(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_techno($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_techno WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
 //alumni
     function tambah_alumni($data)
         {

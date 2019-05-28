@@ -7,18 +7,25 @@
 
 <body>
 
-    <h2>Chemengfair Slide</h2>
+    <h2>Departement Slide</h2>
     <div class="button_all">
-        <button class="button">GA</button>
-        <button class="button">HRD</button>
-        <button class="button">PRC</button>
-        <button class="button">SED</button>
-        <button class="button">RNT</button>
-        <button class="button">STD</button>
-        <button class="button">SOCDEV</button>
-        <button class="button">TECHNO</button>
+        <a href="list_slide_dep_ga.php" class="button">GA</a>
+        <a href="list_slide_dep_hrd.php" class="button">HRD</a>
+        <a href="list_slide_dep_prc.php" class="button">PRC</a>
+        <a href="list_slide_dep_sed.php" class="button">SED</a>
+        <a href="list_slide_dep_rnt.php" class="button">RNT</a>
+        <a href="list_slide_dep_std.php" class="button">STD</a>
+        <a href="list_slide_dep_socdev.php" class="button">SOCDEV</a>
+        <a href="list_slide_dep_techno.php" class="button">TECHNO</a>
     </div>
 
 </body>
 
 </html>
+<script>
+    $(".button").each(function() {
+        if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+            $(this).addClass('active');
+        }
+    });
+</script>
