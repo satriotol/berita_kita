@@ -21,7 +21,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="">
+				<a href="article_event.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-photo color2 ot-circle"></i>
@@ -33,7 +33,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_chemist.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-camera-retro color3 ot-circle"></i>
@@ -45,7 +45,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_advokasi.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -57,7 +57,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_oprec.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -69,7 +69,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_materi.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -81,7 +81,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_cerc.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
@@ -93,7 +93,7 @@ include 'header.php';
 			<!-- end about module -->
 			<!-- about module -->
 			<div class="col-md-3 text-center">
-				<a href="http://">
+				<a href="article_store.php">
 					<div class="mz-module">
 						<div class="mz-module-about">
 							<i class="fa fa-cube color4 ot-circle"></i>
