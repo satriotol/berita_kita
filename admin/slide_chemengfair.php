@@ -7,12 +7,12 @@
 
     <h2>Chemengfair Slide</h2>
     <div class="button_all">
-        <a class="button">SEMNIAR NASIONAL</a>
+        <a href="list_slide_chem_semnas.php" class="button">SEMINAR NASIONAL</a>
         <a href="list_slide_chem_iso.php" class="button">ISO</a>
         <a href="list_slide_chem_cesa.php" class="button">CESA</a>
         <a href="list_slide_chem_s2c.php" class="button">S2C</a>
         <a href="list_slide_chem_ception.php" class="button">CEPTION</a>
-        <a class="button">CHEMENG AWARDS</a>
+        <a href="list_slide_chem_ma.php" class="button">CHEMENG AWARDS</a>
     </div>
 
 </body>
