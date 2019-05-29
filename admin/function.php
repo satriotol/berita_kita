@@ -1662,8 +1662,7 @@ function query($query){
     }
     function hapus_slide_oprec($id_slide){
         global $conn;
-        mysqli_query($conn,"DE
-        LETE FROM slide_oprec WHERE id_slide = $id_slide");
+        mysqli_query($conn,"DELETE FROM slide_oprec WHERE id_slide = $id_slide");
         return mysqli_affected_rows($conn);
     }
 //slide_materi
@@ -1737,7 +1736,7 @@ function query($query){
         mysqli_query($conn,"DELETE FROM slide_materi WHERE id_slide = $id_slide");
         return mysqli_affected_rows($conn);
     }
-//slide_event
+//slide_cerc
     function tambah_slide_gambar_cerc($data)
     {
         global $conn;
@@ -1806,6 +1805,77 @@ function query($query){
     function hapus_slide_cerc($id_slide){
         global $conn;
         mysqli_query($conn,"DELETE FROM slide_cerc WHERE id_slide = $id_slide");
+        return mysqli_affected_rows($conn);
+    }
+//slide_store
+    function tambah_slide_gambar_store($data)
+    {
+        global $conn;
+        $main_judul = htmlspecialchars($data["main_judul"]);
+        $sub_judul = htmlspecialchars($data["sub_judul"]);
+        $slide_gambar = slide_upload_store();
+        if(!$slide_gambar){
+            return false;
+        }
+        $query = "INSERT INTO slide_store VALUES ('','$main_judul','$sub_judul','$slide_gambar')";
+        mysqli_query($conn,"$query");
+
+        return mysqli_affected_rows($conn);
+    }
+    function slide_upload_store(){
+        $namaFile = $_FILES['slide_gambar']['name'];
+        $ukuranFile = $_FILES['slide_gambar']['size'];
+        $error = $_FILES['slide_gambar']['error'];
+        $tmpName = $_FILES['slide_gambar']['tmp_name'];
+        $fileinfo = getimagesize($_FILES['slide_gambar']['tmp_name']);
+        $filewidth = $fileinfo[0];
+        $fileheight = $fileinfo[1];
+        //cek apakah tidak ada gambar yang diupload
+        if($error === 4){
+            echo "<script>
+                alert('pilih gambar terlebih dahulu!');
+                </script>";
+            return false;
+        } 
+
+        // cek apakah yang diupload gambar
+        $ekstensiGambarValid = ['jpg','jpeg','png'];
+        $ekstensiGambar = explode('.',$namaFile);
+        $ekstensiGambar = strtolower (end($ekstensiGambar));
+        if(!in_array($ekstensiGambar,$ekstensiGambarValid)){
+            echo "<script>
+            alert('Yang anda upload bukan gambar!');
+            </script>";
+        return false;
+        }
+
+        if($ukuranFile > 10000000){
+            echo "<script>
+            alert('Ukuran gambar terlalu besar');
+            </script>";
+        return false;
+        }
+
+        if($filewidth != "1920" && $fileheight != "920")
+        {
+            echo "<script>
+            alert('Tinggi harus 1920px dan Lebar harus 920px');
+            </script>";
+            return false;
+        }
+
+        //lolos pengecekan,gambar siap diupload
+        //generate nama gambar baru
+        $namaFileBaru = uniqid();
+        $namaFileBaru .='.';
+        $namaFileBaru .=$ekstensiGambar;
+        move_uploaded_file($tmpName,'../../upload/'.$namaFileBaru);
+
+        return $namaFileBaru;
+    }
+    function hapus_slide_store($id_slide){
+        global $conn;
+        mysqli_query($conn,"DELETE FROM slide_store WHERE id_slide = $id_slide");
         return mysqli_affected_rows($conn);
     }
 //alumni
