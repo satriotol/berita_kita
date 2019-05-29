@@ -1,11 +1,5 @@
 <?php
 session_start();
-
-if(!isset($_SESSION["login"])){
-    echo "Welcome '{$_SESSION['user_admin']}'";
-    header("Location: login.php");
-    exit;
-}
 ?>
 
 <html>
@@ -19,7 +13,13 @@ if(!isset($_SESSION["login"])){
     <script src="js/animate.js"></script>
     <link rel="stylesheet" href="css/header.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<style>
+.red-logout{
+    background-color: red;
+}
+</style>
 
 <body>
     <div class="topnav">
@@ -41,7 +41,7 @@ if(!isset($_SESSION["login"])){
         <a class="nav-link" href="/berita_kita/admin/list_subberita.php">List Sub Berita</a>
         <a class="nav-link" href="/berita_kita/admin/list_pesan.php">List Pesan</a>
         <a class="nav-link" href="/berita_kita/admin/list_video.php">List Video</a>
-        <a class="nav-link" href="/berita_kita/admin/logout.php">LOGOUT</a>
+        <a style="float:right" class="red-logout" href="/berita_kita/admin/logout.php">LOGOUT</a>
     </div>
 </body>
 
