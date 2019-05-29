@@ -3,15 +3,21 @@ include "layout/header.php";
 require 'function.php';
 ?>
 <html>
-<head>
-    <h1>Dashboard</h1>
-    <h2>Selamat datang,"nama admin"</h2>
-</head>
-
 <style>
-
+.center_admin{
+    text-align: center;
+}
 </style>
 
-<script>  
-</script>
-</html> 
+<head>
+
+</head>
+
+<body>
+    <div class="center_admin">
+        <h1>Selamat Datang</h1>
+        <h2>Halaman Admin HIMPROTEKKIM UNNES</h2>
+    </div>
+</body>
+
+</html>
