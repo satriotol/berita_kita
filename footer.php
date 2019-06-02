@@ -10,10 +10,10 @@
 			<div class="footer-socmed-container">
 				<p class="footer-socmed-title">Social Media Kami</p>
 				<div class="footer-socmed">
-					<a class="fa fa-facebook" href=""></a>
-					<a class="fa fa-instagram" href=""></a>
-					<a class="fa fa-twitter" href=""></a>
-					<a class="fa fa-youtube" href=""></a>
+					<a class="fa fa-linkedin" href="" target="_blank"></a>
+					<a class="fa fa-instagram" href="https://www.instagram.com/hmptkunnes/" target="_blank"></a>
+					<a class="fa fa-twitter" href="https://twitter.com/hmptkunnes" target="_blank"></a>
+					<a class="fa fa-youtube" href="https://www.youtube.com/channel/UCrKh08laDzT9rvsqUjzHnAw" target="_blank"></a>
 				</div>
 			</div>
 		</div>
