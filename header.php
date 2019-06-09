@@ -54,9 +54,9 @@
                     <a class="nav-link" style="color: white" href="isi_data_alumni.php" target="_blank">Alumni</a>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="color: white" href="#">About</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="color: white" href="aboutus.php">About</a>
                     <div class="dropdown-content" style="background-color: #1295C9">
-                        <a class="nav-link" style="color: white" href="aboutus.php">Kabinet</a>
+                        <a class="nav-link" style="color: white" href="menu_kabinet.php">Kabinet</a>
                         <a class="nav-link" style="color: white" href="menu_departemen.php">Departemen</a>
                         <a class="nav-link" style="color: white" href="http://tekkim.unnes.ac.id" target="_blank">Jurusan</a>
                         <a class="nav-link" style="color: white" href="kontak_kami.php">Kontak</a>

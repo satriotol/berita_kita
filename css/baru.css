@@ -864,3 +864,21 @@ a:hover {
 	background: #1295C9;
 	color: white;
 }
+
+/* Kabinet */
+
+.sto-label {
+	padding-bottom: .75em;
+	border-bottom: 1px solid #1295C9;
+}
+
+.sto-ketua {
+	line-height: 1.75em;
+}
+
+.gmap-wrapper img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin: auto;
+}
